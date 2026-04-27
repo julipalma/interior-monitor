@@ -44,28 +44,37 @@ function articleSectionsFromHtml(html: string): string[] {
   return out;
 }
 
-export async function articleMatchesDetection(
+export type ArticleInspectResult = { matches: boolean; html?: string };
+
+/** Evalúa si la nota coincide; si hubo fetch HTML, devuelve `html` para reutilizar (título, etc.). */
+export async function inspectArticle(
   candidate: ArticleCandidate,
   detection: DetectionConfig,
-): Promise<boolean> {
+): Promise<ArticleInspectResult> {
   switch (detection.kind) {
     case "url_path": {
       const path = pathnameOf(candidate.url);
-      if (!path) return false;
+      if (!path) return { matches: false };
       const p = path.toLowerCase();
-      return detection.fragments.some((f) => p.includes(f.toLowerCase()));
+      const matches = detection.fragments.some((f) =>
+        p.includes(f.toLowerCase()),
+      );
+      return { matches };
     }
     case "url_suffix": {
       const path = pathnameOf(candidate.url);
-      if (!path) return false;
+      if (!path) return { matches: false };
       const normalized = path.replace(/\/+$/, "").toLowerCase();
       const suf = detection.suffix.toLowerCase();
-      return normalized.endsWith(suf);
+      return { matches: normalized.endsWith(suf) };
     }
     case "news_keywords": {
       const k = (candidate.newsKeywords ?? "").toLowerCase();
-      if (!k) return false;
-      return detection.fragments.some((f) => k.includes(f.toLowerCase()));
+      if (!k) return { matches: false };
+      const matches = detection.fragments.some((f) =>
+        k.includes(f.toLowerCase()),
+      );
+      return { matches };
     }
     case "html_badge": {
       const html = await fetchHtml(candidate.url);
@@ -75,13 +84,21 @@ export async function articleMatchesDetection(
         const href = $(el).attr("href") ?? "";
         if (href.includes(detection.hrefContains)) found = true;
       });
-      return found;
+      return { matches: found, html };
     }
     case "json_ld_article_section": {
       const html = await fetchHtml(candidate.url);
       const sections = articleSectionsFromHtml(html).map((s) => s.toLowerCase());
       const want = detection.sections.map((s) => s.toLowerCase());
-      return sections.some((s) => want.some((w) => s.includes(w)));
+      const matches = sections.some((s) => want.some((w) => s.includes(w)));
+      return { matches, html };
     }
   }
+}
+
+export async function articleMatchesDetection(
+  candidate: ArticleCandidate,
+  detection: DetectionConfig,
+): Promise<boolean> {
+  return (await inspectArticle(candidate, detection)).matches;
 }

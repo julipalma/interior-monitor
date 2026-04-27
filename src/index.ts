@@ -1,13 +1,18 @@
+import { writeFile } from "node:fs/promises";
+import { enrichArticleTitles } from "./article/enrichTitles.js";
+import { extractTitleFromHtml } from "./article/titleFromHtml.js";
 import { sources } from "./config/sources.js";
-import { articleMatchesDetection } from "./section/detect.js";
+import { formatGroupedReportTxt } from "./report/groupedTxt.js";
+import { inspectArticle } from "./section/detect.js";
 import { collectCandidates } from "./sitemap/collect.js";
-import { postSlackWebhook } from "./slack.js";
+import { formatSlackLocalPreview, postSlackWebhook } from "./slack.js";
 import { loadSeen, saveSeen } from "./state.js";
 import type { ArticleCandidate, MatchedArticle, NewsSource } from "./types.js";
 import { mapLimit } from "./utils/mapLimit.js";
 
 const WEBHOOK = process.env.SLACK_WEBHOOK_URL;
 const FETCH_CONCURRENCY = Number(process.env.FETCH_CONCURRENCY ?? "3");
+const GROUPED_TXT_PATH = process.env.GROUPED_TXT_PATH ?? "salida-notas.txt";
 /** Máx. notas a inspeccionar con HTML/JSON-LD por medio (por fecha desc.). */
 const MAX_DEEP_INSPECT = Number(process.env.MAX_DEEP_INSPECT ?? "400");
 
@@ -39,6 +44,12 @@ function limitDeepInspect(
   return sorted.slice(0, MAX_DEEP_INSPECT);
 }
 
+function titleFromInspectHtml(html: string | undefined, base: string): string {
+  if (!html) return base;
+  const t = extractTitleFromHtml(html);
+  return t ?? base;
+}
+
 async function matchForSource(
   source: NewsSource,
   candidates: ArticleCandidate[],
@@ -46,13 +57,15 @@ async function matchForSource(
   if (!needsArticleFetch(source)) {
     const out: MatchedArticle[] = [];
     for (const c of candidates) {
-      if (await articleMatchesDetection(c, source.detection)) {
-        out.push({
-          ...c,
-          sourceId: source.id,
-          sourceName: source.name,
-        });
-      }
+      const r = await inspectArticle(c, source.detection);
+      if (!r.matches) continue;
+      const title = titleFromInspectHtml(r.html, c.title);
+      out.push({
+        ...c,
+        title,
+        sourceId: source.id,
+        sourceName: source.name,
+      });
     }
     return out;
   }
@@ -71,10 +84,12 @@ async function matchForSource(
       : 3,
     async (c) => {
       try {
-        const ok = await articleMatchesDetection(c, source.detection);
-        if (!ok) return null;
+        const r = await inspectArticle(c, source.detection);
+        if (!r.matches) return null;
+        const title = titleFromInspectHtml(r.html, c.title);
         return {
           ...c,
+          title,
           sourceId: source.id,
           sourceName: source.name,
         } satisfies MatchedArticle;
@@ -126,14 +141,22 @@ async function main(): Promise<void> {
     return;
   }
 
+  await enrichArticleTitles(fresh, FETCH_CONCURRENCY);
+  await writeFile(
+    GROUPED_TXT_PATH,
+    formatGroupedReportTxt(fresh),
+    "utf8",
+  );
+  console.error(`Listado por medio en ${GROUPED_TXT_PATH}`);
+
   const message = formatSlackMessage(fresh);
   if (WEBHOOK) {
     await postSlackWebhook(WEBHOOK, message);
     console.error(`Notificación enviada (${fresh.length} notas).`);
   } else {
-    console.log(message);
+    process.stdout.write(formatSlackLocalPreview(message));
     console.error(
-      "SLACK_WEBHOOK_URL no definido: mensaje impreso solo en consola.",
+      "SLACK_WEBHOOK_URL no definido: arriba está la vista previa del mensaje que enviaría Slack.",
     );
   }
 
