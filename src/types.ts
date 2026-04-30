@@ -30,7 +30,19 @@ export type ArticleCandidate = {
   newsKeywords?: string;
 };
 
+export type SemanticTagMatch = {
+  tag: string;
+  similarity: number;
+  weightedScore: number;
+};
+
+export type ArticleSemantic = {
+  score: number;
+  matches: SemanticTagMatch[];
+};
+
 export type MatchedArticle = ArticleCandidate & {
   sourceId: string;
   sourceName: string;
+  semantic?: ArticleSemantic;
 };

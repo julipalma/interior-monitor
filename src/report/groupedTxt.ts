@@ -1,5 +1,16 @@
 import type { MatchedArticle } from "../types.js";
 
+function formatSemanticLine(m: MatchedArticle): string | undefined {
+  const sem = m.semantic;
+  if (!sem?.matches?.length) return undefined;
+  return sem.matches
+    .map(
+      (x) =>
+        `${x.tag} (sim ${x.similarity.toFixed(2)} · peso ${x.weightedScore.toFixed(2)})`,
+    )
+    .join(" · ");
+}
+
 /** Agrupa por medio, conservando el orden de primera aparición. */
 export function formatGroupedReportTxt(items: MatchedArticle[]): string {
   const order: string[] = [];
@@ -19,6 +30,8 @@ export function formatGroupedReportTxt(items: MatchedArticle[]): string {
       lines.push(m.title);
       lines.push(m.publishedAt || "sin fecha");
       lines.push(m.url);
+      const semLine = formatSemanticLine(m);
+      if (semLine) lines.push(semLine);
       lines.push("");
     }
     blocks.push(lines.join("\n").trimEnd());
