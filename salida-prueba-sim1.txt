@@ -1,0 +1,731 @@
+*El Territorio*
+
+Entre la conmoción y el dolor, despidieron al “Negro” Kaiser
+2026-04-30T17:00:34.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882264-entre-la-conmocion-y-el-dolor-despidieron-al-negro-kaiser
+homicidio (sim 1.00 · peso 6.26) · violencia armada (sim 0.78 · peso 4.16) · doble homicidio (sim 0.78 · peso 3.70) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11)
+
+Detuvieron a una mujer por el presunto homicidio de un hombre en Puerto Iguazú
+2026-04-30T15:30:05.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882276-detuvieron-a-una-mujer-por-el-presunto-homicidio-de-un-hombre-en-puerto-iguazu
+homicidio (sim 1.00 · peso 6.26) · doble homicidio (sim 0.78 · peso 3.70) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Denuncian creciente inseguridad en la Chacra 55 donde atacaron hasta provocar la muerte de un jubilado
+2026-04-30T15:00:35.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882240-denuncian-creciente-inseguridad-en-la-chacra-55-donde-atacaron-hasta-provocar-la-muerte-de-un-jubilado
+robo (sim 1.00 · peso 4.32) · santa fe (sim 1.00 · peso 4.01) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61)
+
+Detuvieron a un nuevo sospechoso por el homicidio de un hombre mayor en Posadas
+2026-04-30T14:25:39.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882261-detuvieron-a-un-nuevo-sospechoso-por-el-homicidio-de-un-hombre-mayor-en-posadas
+homicidio (sim 1.00 · peso 6.26) · muerte dudosa (sim 1.00 · peso 4.50) · robo (sim 1.00 · peso 4.32) · santa fe (sim 1.00 · peso 4.01) · robo y entradera (sim 0.78 · peso 3.89)
+
+Tragedia en la Ruta 14: murió un camionero misionero tras un triple choque en Liebig
+2026-04-30T14:00:32.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882252-tragedia-en-la-ruta-14-murio-un-camionero-misionero-tras-un-triple-choque-en-liebig
+accidente vial fatal (sim 0.85 · peso 3.93) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33) · santa fe (sim 0.78 · peso 3.11)
+
+Liberaron a las primeras sospechosas del ataque a un jubilado en la Chacra 55 de Posadas
+2026-04-30T13:28:41.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882249-liberaron-a-las-primeras-sospechosas-del-ataque-a-un-jubilado-en-la-chacra-55-de-posadas
+homicidio (sim 1.00 · peso 6.26) · muerte dudosa (sim 1.00 · peso 4.50) · robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84)
+
+Hallan el cuerpo de un hombre en la zona primaria aduanera de Puerto Iguazú
+2026-04-30T12:11:34.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/30/882228-hallan-el-cuerpo-de-un-hombre-en-la-zona-primaria-aduanera-de-puerto-iguazu
+homicidio (sim 1.00 · peso 6.26) · doble homicidio (sim 0.78 · peso 3.70) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · consumo de sustancias (sim 0.78 · peso 2.10)
+
+Narco brasileño fue capturado en Andresito con más de 110 kilos de marihuana
+2026-04-29T23:19:10.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882195-narco-brasileno-fue-capturado-en-andresito-con-mas-de-110-kilos-de-marihuana
+doble homicidio (sim 0.78 · peso 3.70) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · delito en el exterior (sim 0.78 · peso 2.32) · detenido (sim 1.00 · peso 2.30)
+
+Autopsia confirmó homicidio del hombre de 84 años en Posadas
+2026-04-29T22:15:32.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882174-autopsia-confirmo-homicidio-del-hombre-de-84-anos-en-posadas
+homicidio (sim 1.00 · peso 6.26) · muerte dudosa (sim 1.00 · peso 4.50) · violencia armada (sim 0.78 · peso 4.16) · santa fe (sim 1.00 · peso 4.01) · muerte de menor (sim 0.78 · peso 3.84)
+
+Un instructor de Infantería fue convocado para capacitar a fuerzas especiales penitenciarias
+2026-04-29T21:30:32.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882153-un-instructor-de-infanteria-fue-convocado-para-capacitar-a-fuerzas-especiales-penitenciarias
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · policia de la ciudad (sim 0.78 · peso 1.39) · carcel (sim 1.00 · peso 1.39)
+
+Atacó a su hermano con un machete y fue detenido en Jardín América
+2026-04-29T21:00:35.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882168-ataco-a-su-hermano-con-un-machete-y-fue-detenido-en-jardin-america
+santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · pelea (sim 1.00 · peso 2.56) · detenido (sim 1.00 · peso 2.30) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+Accidente en Mitre y Costanera dejó una motociclista herida
+2026-04-29T20:36:06.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882165-accidente-en-mitre-y-costanera-dejo-una-motociclista-herida
+accidente vial fatal (sim 0.85 · peso 3.93) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33) · santa fe (sim 0.78 · peso 3.11) · moto (sim 1.00 · peso 2.20)
+
+Prisión preventiva para los dos acusados del crimen de Luis López
+2026-04-29T20:30:31.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882159-prision-preventiva-para-los-dos-acusados-del-crimen-de-luis-lopez
+homicidio (sim 1.00 · peso 6.26) · doble homicidio (sim 0.78 · peso 3.70) · desaparicion de persona (sim 0.78 · peso 3.61) · asesinato (sim 1.00 · peso 3.47) · santa fe (sim 0.78 · peso 3.11)
+
+Docente con perimetral volvió a acosar a una de sus alumnas por TikTok y se destaparon hechos de abuso sexual
+2026-04-29T19:48:10.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882132-docente-con-perimetral-volvio-a-acosar-a-una-de-sus-alumnas-por-tiktok-y-se-destaparon-hechos-de-abuso-sexual
+abuso sexual (sim 1.00 · peso 4.57) · muerte de menor (sim 0.78 · peso 3.84) · santa fe (sim 0.78 · peso 3.11) · escuela (sim 1.00 · peso 3.09) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Secuestraron 300 ampollas de fentanilo en Ituzaingó: un detenido
+2026-04-29T18:14:38.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882108-secuestraron-300-ampollas-de-fentanilo-en-ituzaingo-un-detenido
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fentanilo (sim 1.00 · peso 2.40) · detenido (sim 1.00 · peso 2.30) · consumo de sustancias (sim 0.78 · peso 2.10)
+
+Operativo internacional contra la explotación sexual infantil terminó con tres detenidos en Misiones
+2026-04-29T14:01:39.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882042-operativo-internacional-contra-la-explotacion-sexual-infantil-termino-con-tres-detenidos-en-misiones
+abuso sexual (sim 1.00 · peso 4.57) · muerte de menor (sim 0.78 · peso 3.84) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Panambí: apuntan acoso por años y un femicidio premeditado
+2026-04-29T13:30:36.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882018-panambi-apuntan-acoso-por-anos-y-un-femicidio-premeditado
+femicidio (sim 1.00 · peso 5.26) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28)
+
+Amenazas previas y tres detenidos en Posadas
+2026-04-29T11:30:31.000Z
+https://www.elterritorio.com.ar/noticias/2026/04/29/882006-amenazas-previas-y-tres-detenidos-en-posadas
+muerte dudosa (sim 1.00 · peso 4.50) · violencia armada (sim 0.78 · peso 4.16) · santa fe (sim 1.00 · peso 4.01) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61)
+
+*MDP 0223*
+
+Video: captaron a los autores de la amenaza en chino a un supermercadista
+2026-04-30T18:01:00.400Z
+https://www.0223.com.ar/nota/2026-4-30-14-35-0-video-captaron-a-los-autores-de-la-amenaza-en-chino-a-un-supermercadista
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83) · reclamo de justicia (sim 0.78 · peso 2.15) · trata de personas (sim 0.78 · peso 1.70)
+
+Eran cinco en una Eco Sport robada: la abandonaron y escaparon a pie
+2026-04-30T15:07:52.657Z
+https://www.0223.com.ar/nota/2026-4-30-12-7-0-eran-cinco-en-una-eco-sport-robada-la-abandonaron-y-escaparon-a-pie
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · moto (sim 1.00 · peso 2.20) · secuestro (sim 1.00 · peso 1.79)
+
+Sufrió quemaduras y murió en el hospital: investigan si fue durante un robo de cables
+2026-04-30T17:41:15.850Z
+https://www.0223.com.ar/nota/2026-4-30-10-56-0-sufrio-quemaduras-y-murio-en-el-hospital-investigan-si-fue-durante-un-robo-de-cables
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · reclamo de justicia (sim 0.78 · peso 2.15) · declaracion (sim 1.00 · peso 1.39)
+
+Allanan "de urgencia" una casa y encuentran dos autos robados
+2026-04-30T17:41:15.851Z
+https://www.0223.com.ar/nota/2026-4-30-9-54-0-allanan-de-urgencia-una-casa-y-encuentran-dos-autos-robados
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · allanamiento (sim 1.00 · peso 2.83) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Corría picadas en "cuatri" y quiso atropellar a un policía
+2026-04-30T18:04:38.901Z
+https://www.0223.com.ar/nota/2026-4-30-9-17-0-corria-picadas-en-cuatri-y-quiso-atropellar-a-un-policia
+santa fe (sim 1.00 · peso 4.01) · desaparicion de persona (sim 0.78 · peso 3.61) · escuela (sim 1.00 · peso 3.09) · corrupcion policial (sim 0.78 · peso 2.61) · diego maradona (sim 0.78 · peso 2.05)
+
+Se llevaron a tiro una moto y los atraparon a dos cuadras del lugar
+2026-04-29T23:22:32.400Z
+https://www.0223.com.ar/nota/2026-4-29-20-13-0-se-llevaron-a-tiro-una-moto-y-los-atraparon-a-dos-cuadras-del-lugar
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · moto (sim 1.00 · peso 2.20)
+
+*La Nueva*
+
+Condenaron a un hombre a 8 años de cárcel por violar a su hijastra
+2026-04-30T16:59:04.146Z
+https://www.lanueva.com/nota/2026-4-30-13-45-0-condenaron-a-un-hombre-a-8-anos-de-carcel-por-violar-a-su-hijastra
+juicio y condena (sim 1.00 · peso 5.44) · abuso sexual (sim 1.00 · peso 4.57) · muerte de menor (sim 0.78 · peso 3.84) · juicio (sim 1.00 · peso 3.64) · delito en el exterior (sim 0.78 · peso 2.32)
+
+Hallaron en buen estado de salud al adolescente de 15 años que había desaparecido de su casa
+2026-04-29T20:58:36.673Z
+https://www.lanueva.com/nota/2026-4-29-17-50-0-busqueda-desesperada-de-un-adolescente-de-15-anos-en-bahia-blanca
+desaparecido (sim 1.00 · peso 2.40) · busqueda (sim 1.00 · peso 1.61) · adolescente desaparecida (sim 0.78 · peso 1.39) · policia de la ciudad (sim 0.78 · peso 1.39) · hallazgo (sim 1.00 · peso 1.39)
+
+*Nuevo Diario*
+
+Tragedia: murió un hombre tras ser atacado por un enjambre de avispas
+2026-04-30T15:06:25-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-tragedia-murio-un-hombre-tras-ser-atacado-por-un-enjambre-de-avispas.htm
+desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · amenazas (sim 1.00 · peso 1.95) · detencion (sim 1.00 · peso 1.95) · trata de personas (sim 0.78 · peso 1.70)
+
+Tragedia familiar: un disparo accidental terminó con la vida de una adolescente de 14 años
+2026-04-30T14:52:22-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-tragedia-familiar-un-disparo-accidental-termino-con-la-vida-de-una-adolescente-de-14-anos.htm
+robo (sim 1.00 · peso 4.32) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84)
+
+Hallaron muerto a un hombre en su vivienda del barrio Ejército Argentino
+2026-04-30T14:16:59-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-hallaron-muerto-a-un-hombre-en-su-vivienda-del-barrio-ejercito-argentino.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · consumo de sustancias (sim 1.00 · peso 2.71)
+
+Le vaciaron la billetera digital con un falso “soporte” y perdió $700.000
+2026-04-30T14:06:45-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-le-vaciaron-la-billetera-digital-con-un-falso-soporte-y-perdio-700-000.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · estafa (sim 1.00 · peso 3.74) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98)
+
+Hospitalizan a una mujer tras chocar con un colectivo de la Línea 120
+2026-04-30T13:02:14-03:00
+https://nuevodiarioweb.com.ar/policiales/hospitalizan-a-una-mujer-tras-chocar-con-un-colectivo-de-la-linea-120.htm
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · detenido (sim 1.00 · peso 2.30) · moto (sim 1.00 · peso 2.20)
+
+Violó perimetral y amenazó a su ex: lo atraparon en el Bº Bosco II
+2026-04-30T12:25:51-03:00
+https://nuevodiarioweb.com.ar/policiales/violo-perimetral-y-amenazo-a-su-ex-lo-atraparon-en-el-b-bosco-ii.htm
+robo (sim 1.00 · peso 4.32) · juicio y condena (sim 0.78 · peso 4.21) · robo y entradera (sim 0.78 · peso 3.89) · juicio (sim 1.00 · peso 3.64) · santa fe (sim 0.78 · peso 3.11)
+
+“QEPD ‘Zurdo’; siempre te recordaremos, amigo”: despiden al motociclista fallecido
+2026-04-30T12:08:26-03:00
+https://nuevodiarioweb.com.ar/policiales/qepd-zurdo-siempre-te-recordaremos-amigo-despiden-al-motociclista-fallecido.htm
+accidente vial fatal (sim 0.85 · peso 3.93) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · moto (sim 1.00 · peso 2.20) · policia de la ciudad (sim 1.00 · peso 1.79)
+
+"Abuelita" hizo entrar a ladrona a su casa y le robó $400.000 de la jubilación
+2026-04-30T10:49:25-03:00
+https://nuevodiarioweb.com.ar/policiales/abuelita-hizo-entrar-a-ladrona-a-su-casa-y-le-robo-400-000-de-la-jubilacion.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Jueves negro: un futbolista santiagueño murió en el acto en terrible choque
+2026-04-30T08:35:05-03:00
+https://nuevodiarioweb.com.ar/policiales/jueves-negro-un-futbolista-santiagueno-murio-en-el-acto-en-terrible-choque-1.htm
+accidente vial fatal (sim 0.85 · peso 3.93) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Mató a su propia nieta: perpetua por un crimen que conmocionó
+2026-04-30T08:25:55-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-mato-a-su-propia-nieta-perpetua-por-un-crimen-que-conmociono.htm
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 1.00 · peso 5.44) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · violencia intrafamiliar (sim 1.00 · peso 3.99)
+
+Crimen por una deuda: ejecutó a un mecánico a plena luz del día y quedó filmado
+2026-04-30T08:06:23-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-crimen-por-una-deuda-ejecuto-a-un-mecanico-a-plena-luz-del-dia-y-quedo-filmado.htm
+homicidio (sim 1.00 · peso 6.26) · doble homicidio (sim 0.78 · peso 3.70) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · detenido (sim 1.00 · peso 2.30)
+
+Murió tras ser atacado por un enjambre de avispas mientras cortaba leña
+2026-04-30T08:00:01-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-murio-tras-ser-atacado-por-un-enjambre-de-avispas-mientras-cortaba-lena.htm
+muerte de menor (sim 0.78 · peso 3.84) · muerte dudosa (sim 0.78 · peso 3.49) · santa fe (sim 0.78 · peso 3.11) · muerte por intoxicacion (sim 0.78 · peso 2.05) · amenazas (sim 1.00 · peso 1.95)
+
+Indignante ataque: una adolescente fue brutalmente golpeada por familiares de su novio
+2026-04-30T07:40:43-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-indignante-ataque-una-adolescente-fue-brutalmente-golpeada-por-familiares-de-su-novio.htm
+violencia armada (sim 0.78 · peso 4.16) · violencia de genero (sim 0.78 · peso 3.28) · violencia intrafamiliar (sim 0.78 · peso 3.09) · pareja (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+Salió unas horas y le vaciaron la casa: se llevaron $5 millones en efectivo
+2026-04-30T07:34:19-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-salio-unas-horas-y-le-vaciaron-la-casa-se-llevaron-5-millones-en-efectivo.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98)
+
+Conmoción por la muerte de un motociclista santiagueño tras brutal choque
+2026-04-30T06:14:33-03:00
+https://nuevodiarioweb.com.ar/policiales/conmocion-por-la-muerte-de-un-motociclista-santiagueno-tras-brutal-choque.htm
+accidente vial fatal (sim 0.85 · peso 3.93) · muerte de menor (sim 0.78 · peso 3.84) · muerte dudosa (sim 0.78 · peso 3.49) · choque (sim 1.00 · peso 3.33) · moto (sim 1.00 · peso 2.20)
+
+Imponen prohibición de acercamiento a un policía santiagueño por hostigar a su ex
+2026-04-30T06:02:18-03:00
+https://nuevodiarioweb.com.ar/policiales/imponen-prohibicion-de-acercamiento-a-un-policia-santiagueno-por-hostigar-a-su-ex.htm
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · santa fe (sim 0.78 · peso 3.11) · violencia intrafamiliar (sim 0.78 · peso 3.09) · corrupcion policial (sim 0.78 · peso 2.61)
+
+En el patio de una escuela primaria, docentes hallaron un cuchillo tirado
+2026-04-30T05:04:00-03:00
+https://nuevodiarioweb.com.ar/policiales/en-el-patio-de-una-escuela-primaria-docentes-hallaron-un-cuchillo-tirado.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · escuela (sim 1.00 · peso 3.09)
+
+Una niña contó en la escuela que fue abusada y se determinó que era mentira
+2026-04-30T04:56:00-03:00
+https://nuevodiarioweb.com.ar/policiales/una-ninia-conto-en-la-escuela-que-fue-abusada-y-se-determino-que-era-mentira.htm
+abuso sexual (sim 1.00 · peso 4.57) · violencia armada (sim 0.78 · peso 4.16) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11) · violencia intrafamiliar (sim 0.78 · peso 3.09)
+
+Sujeto era buscado por robo tras irrumpir en la casa de su ex pareja
+2026-04-30T04:47:00-03:00
+https://nuevodiarioweb.com.ar/policiales/sujeto-era-buscado-por-robo-tras-irrumpir-en-la-casa-de-su-ex-pareja.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · corrupcion policial (sim 0.78 · peso 2.61)
+
+El músico Enrique Maza rompió el silencio tras las amenazas recibidas
+2026-04-30T02:30:00-03:00
+https://nuevodiarioweb.com.ar/policiales/el-musico-enrique-maza-rompio-el-silencio-tras-las-amenazas-recibidas.htm
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · amenazas (sim 1.00 · peso 1.95) · arma (sim 1.00 · peso 1.79) · policia de la ciudad (sim 0.78 · peso 1.39)
+
+Aborto a una menor: El fiscal Bridoux pone en la mira al médico porteño
+2026-04-30T02:30:00-03:00
+https://nuevodiarioweb.com.ar/policiales/aborto-a-una-menor-el-fiscal-bridoux-pone-en-la-mira-al-medico-portenio.htm
+abuso sexual (sim 1.00 · peso 4.57) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83)
+
+Allanaron una vivienda por un robo y encontraron decenas de tortuguitas
+2026-04-30T02:30:00-03:00
+https://nuevodiarioweb.com.ar/policiales/allanaron-una-vivienda-por-un-robo-y-encontraron-decenas-de-tortuguitas.htm
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · allanamiento (sim 1.00 · peso 2.83) · corrupcion policial (sim 0.78 · peso 2.61)
+
+VIDEO | Violenta batalla campal entre adolescentes en una plaza de Añatuya
+2026-04-29T22:44:40-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-violenta-batalla-campal-entre-adolescentes-en-una-plaza-de-anatuya.htm
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · violencia intrafamiliar (sim 0.78 · peso 3.09)
+
+Policías asistieron un parto en una casa y salvaron a un bebé
+2026-04-29T22:18:32-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-policias-asistieron-un-parto-en-una-casa-y-salvaron-a-la-bebe.htm
+santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20) · bebe (sim 1.00 · peso 1.95) · policia de la ciudad (sim 1.00 · peso 1.79)
+
+Un hombre fue detenido por amenazas y desobediencia judicial en un barrio de Capital
+2026-04-29T22:09:13-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-un-hombre-fue-detenido-por-amenazas-y-desobediencia-judicial-en-un-barrio-de-capital.htm
+juicio y condena (sim 0.78 · peso 4.21) · juicio (sim 1.00 · peso 3.64) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83) · corrupcion policial (sim 0.78 · peso 2.61)
+
+“Los voy a matar a todos”: un testigo contó lo que dijo el peluquero santiagueño antes de asesinar a su compañero en Recoleta
+2026-04-29T20:54:50-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-los-voy-a-matar-a-todos-un-testigo-conto-lo-que-dijo-el-peluquero-santiagueno-antes-de-asesinar-a-su-companero-en-recoleta.htm
+homicidio (sim 1.00 · peso 6.26) · violencia de genero (sim 1.00 · peso 4.23) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84)
+
+Desbarataron un punto de venta de drogas en el barrio Vinalar y detuvieron a un sospechoso
+2026-04-29T20:33:44-03:00
+https://nuevodiarioweb.com.ar/policiales/info-santiago-estero-desbarataron-un-punto-de-venta-de-drogas-en-el-barrio-vinalar-y-detuvieron-a-un-sospechoso.htm
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · allanamiento (sim 1.00 · peso 2.83) · corrupcion policial (sim 0.78 · peso 2.61)
+
+*Todo Jujuy*
+
+Violencia de género: detuvieron a un hombre acusado de disparar contra la casa de su expareja
+2026-04-30T16:27:00Z
+https://www.todojujuy.com/policiales/violencia-genero-detuvieron-un-hombre-acusado-disparar-contra-la-casa-su-expareja-n289505
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · violencia intrafamiliar (sim 1.00 · peso 3.99) · desaparicion de persona (sim 0.78 · peso 3.61) · abuso sexual (sim 0.78 · peso 3.55)
+
+Persecución en Salta: secuestraron 439 kilos de hojas de coca y casi 900 paquetes de cigarrillo
+2026-04-30T12:14:00Z
+https://www.todojujuy.com/policiales/persecucion-salta-secuestraron-439-kilos-hojas-coca-y-casi-900-paquetes-cigarrillo-n289483
+santa fe (sim 0.78 · peso 3.11) · reclamo de justicia (sim 0.78 · peso 2.15) · secuestro (sim 1.00 · peso 1.79) · persecucion (sim 1.00 · peso 1.39) · ruta 3 (sim 1.00 · peso 1.10)
+
+El acusado por el crimen del jujeño en Bolivia pidió salir de prisión: habrá una audiencia clave
+2026-04-29T17:30:00Z
+https://www.todojujuy.com/policiales/el-acusado-el-crimen-del-jujeno-bolivia-pidio-salir-prision-habra-una-audiencia-clave-n289457
+juicio y condena (sim 0.78 · peso 4.21) · juicio (sim 1.00 · peso 3.64) · asesinato (sim 1.00 · peso 3.47) · santa fe (sim 0.78 · peso 3.11) · detenido (sim 1.00 · peso 2.30)
+
+Detuvieron a un policía de la Ciudad tras matar de 10 tiros a una ladrona
+2026-04-29T14:29:32Z
+https://www.todojujuy.com/policiales/detuvieron-un-policia-la-ciudad-matar-10-tiros-una-ladrona-n289452
+homicidio (sim 1.00 · peso 6.26) · robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70)
+
+El acusado por el crimen del jujeño en Bolivia tiene denuncias por violencia y amenazas
+2026-04-29T00:26:00Z
+https://www.todojujuy.com/policiales/el-acusado-el-crimen-del-jujeno-bolivia-tiene-denuncias-violencia-y-amenazas-n289432
+violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49) · asesinato (sim 1.00 · peso 3.47)
+
+Cuatro allanamientos en Jujuy: "Detectamos usuarios que tenían material de abuso sexual infantil"
+2026-04-29T10:14:41Z
+https://www.todojujuy.com/policiales/cuatro-allanamientos-jujuy-detectamos-usuarios-que-tenian-material-abuso-sexual-infantil-n289431
+abuso sexual (sim 1.00 · peso 4.57) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83)
+
+Búsqueda de menores en Jujuy: preocupan los mensajes estigmatizantes y negativos
+2026-04-29T10:15:40Z
+https://www.todojujuy.com/policiales/busqueda-menores-jujuy-preocupan-los-mensajes-estigmatizantes-y-negativos-n289427
+desaparicion de persona (sim 1.00 · peso 4.66) · juicio y condena (sim 0.78 · peso 4.21) · muerte de menor (sim 0.78 · peso 3.84) · juicio (sim 1.00 · peso 3.64) · santa fe (sim 0.78 · peso 3.11)
+
+El BCRA sancionó a una financiera vinculada a Chiqui Tapia: multas millonarias y suspensión para operar
+2026-04-28T17:17:17Z
+https://www.todojujuy.com/policiales/el-bcra-sanciono-una-financiera-vinculada-chiqui-tapia-multas-millonarias-y-suspension-operar-n289385
+santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · trata de personas (sim 0.78 · peso 1.70) · auto (sim 1.00 · peso 1.39) · madre (sim 1.00 · peso 1.39)
+
+*LM Neuquén*
+
+Tragedia en Ruta 17: dónde fue y qué se sabe del choque fatal que terminó con un trabajador petrolero muerto
+2026-04-30T17:52:32Z
+https://www.lmneuquen.com/policiales/tragedia-ruta-17-donde-fue-y-que-se-sabe-del-choque-fatal-que-termino-un-trabajador-petrolero-muerto-n1236971
+accidente vial fatal (sim 1.00 · peso 4.62) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33)
+
+Murió un petrolero en un grave accidente de tránsito camino al acto por el Día del Trabajador
+2026-04-30T16:27:29Z
+https://www.lmneuquen.com/policiales/murio-un-petrolero-un-grave-accidente-transito-camino-al-acto-el-dia-del-trabajador-n1236955
+accidente vial fatal (sim 0.85 · peso 3.93) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49) · choque (sim 1.00 · peso 3.33)
+
+Fuerte choque de una moto de alta cilindrada en la Avenida Mosconi: el conductor salió volando
+2026-04-30T12:39:51Z
+https://www.lmneuquen.com/policiales/fuerte-choque-una-moto-alta-cilindrada-la-avenida-mosconi-el-conductor-salio-volando-n1236913
+violencia armada (sim 0.78 · peso 4.16) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11)
+
+Un golpe gigantesco al contrabando de armas en el país incluyó a neuquinos
+2026-04-30T01:14:20Z
+https://www.lmneuquen.com/policiales/un-golpe-gigantesco-al-contrabando-armas-el-pais-incluyo-neuquinos-n1236896
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · allanamiento (sim 1.00 · peso 2.83) · arma (sim 1.00 · peso 1.79)
+
+Múltiples allanamientos: armas y droga secuestradas
+2026-04-30T02:24:52Z
+https://www.lmneuquen.com/policiales/multiples-allanamientos-armas-y-droga-secuestradas-n1236874
+narcotrafico (sim 1.00 · peso 4.13) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83) · detenido (sim 1.00 · peso 2.30)
+
+Un jurado popular analiza la prueba del crimen a traición de Franco Ramírez
+2026-04-29T19:45:00Z
+https://www.lmneuquen.com/policiales/un-jurado-popular-analiza-la-prueba-del-crimen-traicion-franco-ramirez-n1236832
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 1.00 · peso 5.44) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70) · juicio (sim 1.00 · peso 3.64)
+
+Detuvieron a una pareja que habría participado de un homicidio en Centenario
+2026-04-29T17:22:35Z
+https://www.lmneuquen.com/policiales/detuvieron-una-pareja-que-habria-participado-un-homicidio-centenario-n1236818
+homicidio (sim 1.00 · peso 6.26) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49)
+
+Murió en un choque, voló 25 metros e impactó contra una comisaría: denuncian irregularidades en la investigación
+2026-04-30T13:39:12Z
+https://www.lmneuquen.com/policiales/murio-un-choque-volo-25-metros-e-impacto-contra-una-comisaria-denuncian-irregularidades-la-investigacion-n1236810
+homicidio (sim 1.00 · peso 6.26) · violencia armada (sim 0.78 · peso 4.16) · accidente vial fatal (sim 0.85 · peso 3.93) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70)
+
+*El Liberal*
+
+Fr&iacute;as: detienen a tres hombres con drogas y m&aacute;s de dos millones de pesos en efectivo
+2026-04-30T15:01:20-03:00
+https://www.elliberal.com.ar/nota/78746/2026/04/frias--detienen-a-tres-hombres-con-drogas-y-mas-de-dos-millones-de-pesos-en-efectivo
+santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · allanamiento (sim 1.00 · peso 2.83) · corrupcion policial (sim 0.78 · peso 2.61) · detenido (sim 1.00 · peso 2.30)
+
+Tragedia en Ruta 9: muri&oacute; un joven futbolista y las redes lo despiden con dolor
+2026-04-30T11:51:13-03:00
+https://www.elliberal.com.ar/nota/78730/2026/04/tragedia-en-ruta-9--murio-un-joven-futbolista-y-las-redes-lo-despiden-con-dolor
+santa fe (sim 1.00 · peso 4.01) · desaparicion de persona (sim 0.78 · peso 3.61) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20) · trata de personas (sim 0.78 · peso 1.70)
+
+Organizan un concierto de viol&iacute;n y piano en el Instituto Privado de arte
+2026-04-30T11:48:21-03:00
+https://www.elliberal.com.ar/nota/78734/2026/04/organizan-un-concierto-de-violin-y-piano-en-el-instituto-privado-de-arte
+lucas pertossi (sim 0.78 · peso 1.70) · ruta 3 (sim 1.00 · peso 1.10) · gran hermano (sim 0.78 · peso 0.85) · alumno (sim 1.00 · peso 0.69) · argentina (sim 1.00 · peso 0.69)
+
+Pinto: entr&oacute; a robar en una casa, fue reconocido en la v&iacute;a p&uacute;blica y termin&oacute; detenido
+2026-04-30T11:37:33-03:00
+https://www.elliberal.com.ar/nota/78729/2026/04/pinto--entro-a-robar-en-una-casa-fue-reconocido-en-la-via-publica-y-termino-detenido
+robo (sim 1.00 · peso 4.32) · juicio y condena (sim 0.78 · peso 4.21) · robo y entradera (sim 0.78 · peso 3.89) · juicio (sim 1.00 · peso 3.64) · desaparicion de persona (sim 0.78 · peso 3.61)
+
+Dos adolescentes protagonizaron una violenta pelea en una plaza de A&ntilde;atuya
+2026-04-30T10:14:00-03:00
+https://www.elliberal.com.ar/nota/78723/2026/04/dos-adolescentes-protagonizaron-una-violenta-pelea-en-una-plaza-de-anatuya
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia intrafamiliar (sim 0.78 · peso 3.09)
+
+A&ntilde;atuya: fue a reclamar por el robo de gasoil de sus camiones y termin&oacute; brutalmente golpeado
+2026-04-30T09:53:00-03:00
+https://www.elliberal.com.ar/nota/78724/2026/04/anatuya--fue-a-reclamar-por-el-robo-de-gasoil-desde-sus-camiones-y-recibio-una-brutal-golpiza
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · agresion (sim 1.00 · peso 2.40) · reclamo de justicia (sim 0.78 · peso 2.15) · amenazas (sim 1.00 · peso 1.95)
+
+Estafa virtual en Loreto: le vaciaron la billetera digital con un llamado falso
+2026-04-30T08:02:00-03:00
+https://www.elliberal.com.ar/nota/78721/2026/04/estafa-virtual-en-loreto--le-vaciaron-la-billetera-digital-con-un-llamado-falso
+estafa (sim 1.00 · peso 3.74) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Sali&oacute; por tres horas de su casa y ladrones le robaron $5 millones
+2026-04-30T06:00:00-03:00
+https://www.elliberal.com.ar/nota/78712/2026/04/salio-por-tres-horas-de-su-casa-y-ladrones-le-robaron-5-millones
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98)
+
+Un hombre de 74 a&ntilde;os muri&oacute; tras un violento choque entre motos
+2026-04-30T06:00:00-03:00
+https://www.elliberal.com.ar/nota/78711/2026/04/un-hombre-de-74-anos-murio-tras-un-violento-choque-entre-motos
+accidente vial fatal (sim 1.00 · peso 4.62) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20)
+
+Por presunta "defraudaci&oacute;n", denuncian a socios del financista Mart&iacute;n Maldonado
+2026-04-30T06:00:00-03:00
+https://www.elliberal.com.ar/nota/78708/2026/04/por-presunta-defraudacion-denuncian-a-socios-del-financista-martin-maldonado
+santa fe (sim 0.78 · peso 3.11) · delito en el exterior (sim 0.78 · peso 2.32) · moto (sim 1.00 · peso 2.20) · diego maradona (sim 0.78 · peso 2.05) · dolares (sim 1.00 · peso 1.10)
+
+"Drugstore blanco": tres mujeres presas y una cuarta al caer en banda dirigida por presidiarios
+2026-04-30T06:00:00-03:00
+https://www.elliberal.com.ar/nota/78705/2026/04/drugstore-blanco--tres-mujeres-presas-y-una-cuarta-al-caer-en-banda-dirigida-por-presidiarios
+juicio y condena (sim 0.78 · peso 4.21) · santa fe (sim 0.78 · peso 3.11) · pareja (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15) · detencion (sim 1.00 · peso 1.95)
+
+Adolescente sufre&nbsp;brutal golpiza de parte de su exsuegra y su excu&ntilde;ada
+2026-04-30T06:00:00-03:00
+https://www.elliberal.com.ar/nota/78695/2026/04/adolescente-sufre-brutal-golpiza-de-parte-de-su-exsuegra-y-su-excunada
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84) · violencia intrafamiliar (sim 0.78 · peso 3.09) · corrupcion policial (sim 0.78 · peso 2.61)
+
+"Los voy a matar a todos": un testigo clave cont&oacute; qu&eacute; dijo el peluquero santiague&ntilde;o antes de atacar a su compa&ntilde;ero en Recoleta
+2026-04-29T20:30:00-03:00
+https://www.elliberal.com.ar/nota/78688/2026/04/los-voy-a-matar-a-todos--un-testigo-clave-conto-que-dijo-el-peluquero-santiagueno-antes-de-atacar-a-su-companero-en-recoleta
+juicio y condena (sim 0.78 · peso 4.21) · juicio (sim 1.00 · peso 3.64) · disparo (sim 1.00 · peso 1.95) · crimen (sim 0.40 · peso 1.90) · arma (sim 1.00 · peso 1.79)
+
+Tensi&oacute;n en B&ordm; Vinalar: cay&oacute; conocido dealer que operaba con drogas, armas y una red de vigilancia
+2026-04-29T19:25:38-03:00
+https://www.elliberal.com.ar/nota/78682/2026/04/cayo-dealer-en-el-barrio-vinalar--operaba-con-drogas-armas-y-una-red-de-vigilancia
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · detenido (sim 1.00 · peso 2.30) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+Investigan a una mujer de 31 a&ntilde;os y a una menor de 15 por el hallazgo de un feto en Los Pirpintos
+2026-04-29T14:42:24-03:00
+https://www.elliberal.com.ar/nota/78665/2026/04/investigan-a-una-mujer-de-31-anos-y-a-una-menor-de-15-por-rl-hallazgo-de-un-feto-en-los-pirpintos
+muerte de menor (sim 1.00 · peso 4.96) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Crece el misterio de la cl&iacute;nica del horror: sospechan que el beb&eacute; podr&iacute;a haber nacido vivo
+2026-04-29T14:17:00-03:00
+https://www.elliberal.com.ar/nota/78663/2026/04/crece-el-misterio-de-la-clinica-del-horror--el-bebe-nacio-vivo-y-desaparecio
+muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83) · trata de personas (sim 1.00 · peso 2.20)
+
+*ADN Sur*
+
+La abogada que le ganó el juicio a Meta cuenta su calvario: “Decían que habíamos secuestrado a mi hijo”
+2026-04-30T17:55:38.001Z
+https://www.adnsur.com.ar/policiales---judiciales/la-abogada-que-le-gano-el-juicio-a-meta-cuenta-su-calvario---decian-que-habiamos-secuestrado-a-mi-hijo-_a69f392a770a58a58f8519b65
+juicio y condena (sim 1.00 · peso 5.44) · muerte de menor (sim 0.78 · peso 3.84) · juicio (sim 1.00 · peso 3.64) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11)
+
+El dato oculto: por qué echaron al hombre que intentó incendiar el circo en Comodoro
+2026-04-30T16:57:58.839Z
+https://www.adnsur.com.ar/policiales---judiciales/el-dato-oculto--por-que-echaron-al-hombre-que-intento-incendiar-el-circo-en-comodoro_a69f37d3e70a58a58f84fc451
+desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98) · consumo de sustancias (sim 1.00 · peso 2.71)
+
+Histórico fallo en Chubut: obligan a SEROS a cubrir fertilización asistida para una pareja de mujeres
+2026-04-30T16:33:26.843Z
+https://www.adnsur.com.ar/policiales---judiciales/historico-fallo-en-chubut--obligan-a-seros-a-cubrir-fertilizacion-asistida-para-una-pareja-de-mujeres_a69f36b1f70a58a58f84eb25c
+muerte de menor (sim 0.78 · peso 3.84) · santa fe (sim 0.78 · peso 3.11) · cecilia strzyzowski (sim 0.78 · peso 2.36) · pareja (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+Tragedia en la Patagonia: murió un petrolero en un choque fatal en Ruta 17
+2026-04-30T16:29:22.851Z
+https://www.adnsur.com.ar/policiales---judiciales/tragedia-en-la-patagonia--murio-un-petrolero-en-un-choque-fatal-en-ruta-17_a69f3831470a58a58f85092ed
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · accidente vial fatal (sim 0.85 · peso 3.93) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61)
+
+Rescate extremo en alta mar: evacuaron a un marinero con fracturas expuestas en Santa Cruz
+2026-04-30T15:49:16.968Z
+https://www.adnsur.com.ar/policiales---judiciales/rescate-extremo-en-alta-mar--evacuaron-a-un-marinero-con-fracturas-expuestas-en-santa-cruz_a69f376e570a58a58f84f568b
+santa fe (sim 1.00 · peso 4.01) · desaparicion de persona (sim 0.78 · peso 3.61) · accidente (sim 0.40 · peso 1.51) · policia de la ciudad (sim 0.78 · peso 1.39) · auto (sim 1.00 · peso 1.39)
+
+El circo rompió el silencio tras el intento de incendio de un “empleado infiel”: el comunicado oficial
+2026-04-30T14:50:00.042Z
+https://www.adnsur.com.ar/policiales---judiciales/el-circo-rompio-el-silencio-tras-el-intento-de-incendio-de-un--empleado-infiel---el-comunicado-oficial_a69f3650070a58a58f84e4660
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11)
+
+Identificaron al exconductor de TV que murió mientras practicaba windsurf en la costa de Chubut
+2026-04-30T14:13:29.259Z
+https://www.adnsur.com.ar/policiales---judiciales/identificaron-al-exconductor-de-tv-que-murio-mientras-practicaba-windsurf-en-la-costa-de-chubut_a69f35cd470a58a58f84d7303
+muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49) · violencia de genero (sim 0.78 · peso 3.28) · trata de personas (sim 1.00 · peso 2.20)
+
+Atacaron a tiros un taller de Comodoro: un joven fue baleado en un presunto ajuste de cuentas
+2026-04-30T13:43:56.258Z
+https://www.adnsur.com.ar/policiales---judiciales/atacaron-a-tiros-un-taller-de-comodoro--un-joven-fue-baleado-en-un-presunto-ajuste-de-cuentas_a69f356bc70a58a58f84d1282
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20) · disparo (sim 1.00 · peso 1.95)
+
+Asesinó a golpes a su nieta de 4 meses y la condenaron a prisión perpetua
+2026-04-30T13:28:49.714Z
+https://www.adnsur.com.ar/policiales---judiciales/asesino-a-golpes-a-su-nieta-de-4-meses-y-la-condenaron-a-prision-perpetua_a69f34c3370a58a58f84c6702
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 1.00 · peso 5.44) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70)
+
+Revelaron qué pasó con el hombre que intentó incendiar un circo en el centro de Comodoro
+2026-04-30T13:27:44.826Z
+https://www.adnsur.com.ar/policiales---judiciales/revelaron-que-paso-con-el-hombre-que-intento-incendiar-un-circo-en-el-centro-de-comodoro_a69f3520670a58a58f84cc35e
+desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · detenido (sim 1.00 · peso 2.30)
+
+Violento robo en Chubut: amenazaron al portero de la catedral con un arma y se llevaron las limosnas
+2026-04-30T12:38:23.546Z
+https://www.adnsur.com.ar/policiales---judiciales/violento-robo-en-chubut--amenazaron-al-portero-de-la-catedral-con-un-arma-y-se-llevaron-las-limosnas_a69f345cc70a58a58f84c01e3
+robo (sim 1.00 · peso 4.32) · violencia de genero (sim 1.00 · peso 4.23) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16) · robo y entradera (sim 0.78 · peso 3.89)
+
+Tragedia: encontraron muerto a un hombre que había salido a pescar en kayak con su amigo
+2026-04-30T12:35:22.023Z
+https://www.adnsur.com.ar/policiales---judiciales/tragedia--encontraron-muerto-a-un-hombre-que-habia-salido-a-pescar-en-kayak-con-su-amigo_a69f345f170a58a58f84c03a2
+santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · desaparecido (sim 1.00 · peso 2.40) · pareja (sim 1.00 · peso 2.20) · bala perdida (sim 0.78 · peso 1.86)
+
+Denunciaron a un jefe policial por presunta violencia de género y fue apartado de su cargo
+2026-04-30T12:05:44.546Z
+https://www.adnsur.com.ar/policiales---judiciales/denunciaron-a-un-jefe-policial-por-presunta-violencia-de-genero-y-fue-apartado-de-su-cargo_a69f3403a70a58a58f84b9c42
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · santa fe (sim 1.00 · peso 4.01) · violencia intrafamiliar (sim 0.78 · peso 3.09) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Tiroteo en una escuela de Santa Fe: el adolescente que mató a un alumno de 13 años volvería a clases
+2026-04-30T11:58:22.987Z
+https://www.adnsur.com.ar/policiales---judiciales/tiroteo-en-una-escuela-de-santa-fe--el-adolescente-que-mato-a-un-alumno-de-13-anos-volveria-a-clases_a69f338fc70a58a58f84b1a22
+homicidio (sim 1.00 · peso 6.26) · santa fe (sim 1.00 · peso 4.01) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70) · violencia de genero (sim 0.78 · peso 3.28)
+
+Insólito hurto en Chubut: robó 30 desodorantes, se los metió en el pantalón y un detalle lo mandó al frente
+2026-04-30T11:42:17.523Z
+https://www.adnsur.com.ar/policiales---judiciales/insolito-hurto-en-chubut--robo-30-desodorantes--se-los-metio-en-el-pantalon-y-un-detalle-lo-mando-al-frente_a69f3388070a58a58f84b10c4
+robo (sim 1.00 · peso 4.32) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · robo y entradera (sim 0.78 · peso 3.89) · santa fe (sim 0.78 · peso 3.11)
+
+Iba a natación en un centro terapéutico, murió ahogada y su familia denuncia negligencia del personal
+2026-04-30T11:19:06.798Z
+https://www.adnsur.com.ar/policiales---judiciales/iba-a-natacion-en-un-centro-terapeutico--murio-ahogada-y-su-familia-denuncia-negligencia-del-personal_a69f32e1c70a58a58f84a4ad6
+muerte de menor (sim 1.00 · peso 4.96) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11)
+
+Violento final en un velorio: enfrentamientos a tiros, dos policías heridos y seis detenidos
+2026-04-30T10:47:31.233Z
+https://www.adnsur.com.ar/policiales---judiciales/violento-final-en-un-velorio--enfrentamientos-a-tiros--dos-policias-heridos-y-seis-detenidos_a69f32bdf70a58a58f84a211c
+muerte de menor (sim 1.00 · peso 4.96) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · desaparicion de persona (sim 0.78 · peso 3.61) · muerte dudosa (sim 0.78 · peso 3.49)
+
+Intentó incendiar un circo tras ser despedido por robo y fue detenido en Comodoro
+2026-04-30T02:45:32.978Z
+https://www.adnsur.com.ar/policiales---judiciales/intento-incendiar-un-circo-tras-ser-despedido-por-robo-y-fue-detenido-en-comodoro_a69f2bfe015fb4f9b54381ef0
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28)
+
+Chocaron contra un guanaco en la Ruta 3 y debieron asistir a un bebé de 20 días tras el impacto
+2026-04-30T01:19:41.837Z
+https://www.adnsur.com.ar/policiales---judiciales/chocaron-contra-un-guanaco-en-la-ruta-3-y-debieron-asistir-a-un-bebe-de-20-dias-tras-el-impacto_a69f2a8ee15fb4f9b5436d152
+muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33) · violencia de genero (sim 0.78 · peso 3.28) · corrupcion policial (sim 0.78 · peso 2.61)
+
+Allanamientos por explotación infantil en Chubut: que reveló la fiscal del caso
+2026-04-30T00:49:31.779Z
+https://www.adnsur.com.ar/policiales---judiciales/allanamientos-por-explotacion-infantil-en-chubut--que-revelo-la-fiscal-del-caso_a69f2a27915fb4f9b543665dc
+abuso sexual (sim 1.00 · peso 4.57) · desaparicion de persona (sim 0.78 · peso 3.61) · allanamiento (sim 1.00 · peso 2.83) · delito en el exterior (sim 0.78 · peso 2.32) · abuso (sim 1.00 · peso 2.30)
+
+Caleta Olivia: demoraron a dos menores por realizar amenazas de tiroteo en escuelas
+2026-04-29T21:31:13.479Z
+https://www.adnsur.com.ar/policiales---judiciales/caleta-olivia--demoraron-a-dos-menores-por-realizar-amenazas-de-tiroteo-en-escuelas_a69f2724e5fe9ca88fcf7d1dd
+muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · tiroteo (sim 1.00 · peso 3.26) · santa fe (sim 0.78 · peso 3.11)
+
+La Cámara de Casación anuló el procesamiento contra Alberto Fernández en la causa Seguros
+2026-04-29T21:27:45.464Z
+https://www.adnsur.com.ar/policiales---judiciales/la-camara-de-casacion-anulo-el-procesamiento-contra-alberto-fernandez-en-la-causa-seguros_a69f275595fe9ca88fcf7fcdd
+desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · trata de personas (sim 0.78 · peso 1.70) · cita (sim 1.00 · peso 1.39) · acusado (sim 1.00 · peso 1.10)
+
+“Soy gordo y la aplasté sin querer”: la polémica defensa de un hombre acusado de asesinar a su pareja
+2026-04-29T18:10:22.918Z
+https://www.adnsur.com.ar/policiales---judiciales/-soy-gordo-y-la-aplaste-sin-querer---la-polemica-defensa-de-un-hombre-acusado-de-asesinar-a-su-pareja_a69f246705fe9ca88fcf54f8f
+homicidio (sim 1.00 · peso 6.26) · femicidio (sim 1.00 · peso 5.26) · violencia de genero (sim 1.00 · peso 4.23) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16)
+
+Ordenan volver a juzgar a un hombre acusado de distribuir material de abuso infantil en Comodoro
+2026-04-29T19:01:51.370Z
+https://www.adnsur.com.ar/policiales---judiciales/ordenan-volver-a-juzgar-a-un-hombre-acusado-de-distribuir-material-de-abuso-infantil-en-comodoro_a69f2525b5fe9ca88fcf5ef79
+abuso sexual (sim 1.00 · peso 4.57) · juicio y condena (sim 0.78 · peso 4.21) · muerte de menor (sim 0.78 · peso 3.84) · juicio (sim 1.00 · peso 3.64) · santa fe (sim 0.78 · peso 3.11)
+
+El abogado filmado mientras recibía dinero descartó su celular y la causa podría quedar paralizada
+2026-04-29T17:06:17.119Z
+https://www.adnsur.com.ar/policiales---judiciales/el-abogado-filmado-mientras-recibia-dinero-descarto-su-celular-y-la-causa-podria-quedar-paralizada_a69f2345b5fe9ca88fcf40c76
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98)
+
+Perdió su celular, le vaciaron la cuenta de Mercado Pago y descubrió que era empleado municipal
+2026-04-29T10:54:13.333Z
+https://www.adnsur.com.ar/policiales---judiciales/perdio-su-celular--le-vaciaron-la-cuenta-de-mercado-pago-y-descubrio-que-era-empleado-municipal_a69f1dc455fe9ca88fcecebef
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · fraude con dinero (sim 0.78 · peso 2.98)
+
+Su amiga le robó el DNI, sacó préstamos a su nombre y la amenazaron con armas para cobrar una deuda
+2026-04-29T15:12:20.998Z
+https://www.adnsur.com.ar/policiales---judiciales/su-amiga-le-robo-el-dni--saco-prestamos-a-su-nombre-y-la-amenazaron-con-armas-para-cobrar-una-deuda_a69f217945fe9ca88fcf1c6d6
+violencia armada (sim 1.00 · peso 5.36) · robo (sim 1.00 · peso 4.32) · violencia de genero (sim 1.00 · peso 4.23) · robo y entradera (sim 0.78 · peso 3.89) · fraude con dinero (sim 1.00 · peso 3.85)
+
+Fuerte choque entre dos autos en Comodoro: una mujer debió ser asistida por médicos
+2026-04-29T13:44:01.400Z
+https://www.adnsur.com.ar/policiales---judiciales/fuerte-choque-entre-dos-autos-en-comodoro--una-mujer-debio-ser-asistida-por-medicos_a69f202855fe9ca88fcefe6cb
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84) · desaparicion de persona (sim 0.78 · peso 3.61) · choque (sim 1.00 · peso 3.33)
+
+Secuestraron computadoras y celulares en una causa por delitos sexuales online e internacionales
+2026-04-29T01:40:08.272Z
+https://www.adnsur.com.ar/policiales---judiciales/secuestraron-computadoras-y-celulares-en-una-causa-por-delitos-sexuales-online-e-internacionales_a69f15948e5f2d033f38a0a7f
+abuso sexual (sim 0.78 · peso 3.55) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83) · delito en el exterior (sim 0.78 · peso 2.32) · maltrato infantil (sim 0.78 · peso 1.93)
+
+Balearon dos veces una casa en menos de 24 horas en Caleta Olivia: recibió al menos 11 tiros
+2026-04-29T11:58:22.041Z
+https://www.adnsur.com.ar/policiales---judiciales/balearon-dos-veces-una-casa-en-menos-de-24-horas-en-caleta-olivia--recibio-al-menos-11-tiros_a69f1ebc75fe9ca88fcee21c3
+violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · narcotrafico (sim 1.00 · peso 4.13) · desaparicion de persona (sim 0.78 · peso 3.61) · tiroteo (sim 1.00 · peso 3.26)
+
+"Lo condenaron por un delito que no cometió": el descargo de la hija de Tillería por el caso Iván Torres
+2026-04-29T11:57:34.339Z
+https://www.adnsur.com.ar/policiales---judiciales/-lo-condenaron-por-un-delito-que-no-cometio---el-descargo-de-la-hija-de-tilleria-por-el-caso-ivan-torres_a69f1e3675fe9ca88fced8637
+desaparicion de persona (sim 1.00 · peso 4.66) · juicio y condena (sim 0.78 · peso 4.21) · muerte de menor (sim 0.78 · peso 3.84) · santa fe (sim 0.78 · peso 3.11) · desaparicion (sim 1.00 · peso 2.71)
+
+Conmoción en la Patagonia: brutal ataque a una trabajadora escolar
+2026-04-29T11:30:58.296Z
+https://www.adnsur.com.ar/policiales---judiciales/conmocion-en-la-patagonia--brutal-ataque-a-una-trabajadora-escolar_a69f1ea185fe9ca88fcee0c8c
+robo (sim 1.00 · peso 4.32) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · robo y entradera (sim 0.78 · peso 3.89) · violencia intrafamiliar (sim 0.78 · peso 3.09)
+
+Murió la mujer que fue apuñalada y abusada por su pareja: agonizó 20 días en el hospital
+2026-04-29T11:14:28.774Z
+https://www.adnsur.com.ar/policiales---judiciales/murio-la-mujer-que-fue-apunalada-y-abusada-por-su-pareja--agonizo-20-dias-en-el-hospital_a69f1e0aa5fe9ca88fced5bdd
+homicidio (sim 1.00 · peso 6.26) · femicidio (sim 1.00 · peso 5.26) · abuso sexual (sim 1.00 · peso 4.57) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16)
+
+Ataque salvaje en Chubut: se turnaron para golpear a un joven hasta dejarlo en coma
+2026-04-28T20:42:56.503Z
+https://www.adnsur.com.ar/policiales---judiciales/ataque-salvaje-en-chubut--se-turnaron-para-golpear-a-un-joven-hasta-dejarlo-en-coma_a69f11a29d75db22d48b11ae3
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16) · doble homicidio (sim 0.78 · peso 3.70) · juicio (sim 1.00 · peso 3.64)
+
+Asaltó a tres menores, estuvo prófugo y cayó mientras cometía otro robo: ni su defensa pidió que lo liberen
+2026-04-28T20:26:04.625Z
+https://www.adnsur.com.ar/policiales---judiciales/asalto-a-tres-menores--estuvo-profugo-y-cayo-mientras-cometia-otro-robo--ni-su-defensa-pidio-que-lo-liberen_a69f113f5d75db22d48b0c2d6
+juicio y condena (sim 1.00 · peso 5.44) · robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70)
+
+*El Día*
+
+VIDEO.- Barrio Norte shockeado por el crimen de la comerciante en La Plata: "Era una mujer muy trabajadora"
+2026-04-30T18:01:51.401Z
+https://www.eldia.com/nota/2026-4-30-11-14-0-barrio-norte-shockeado-por-el-crimen-de-la-comerciante-era-una-mujer-muy-trabajadora-policiales
+asesinato (sim 1.00 · peso 3.47) · choque (sim 1.00 · peso 3.33) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+Violento choque frente a la Estación de Tolosa: una motociclista herida
+2026-04-30T18:01:51.402Z
+https://www.eldia.com/nota/2026-4-30-13-12-0-violento-choque-frente-a-la-estacion-de-tolosa-una-motociclista-herida-policiales
+choque (sim 1.00 · peso 3.33) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15) · crimen (sim 0.40 · peso 1.90)
+
+Conmoción en La Plata: hallaron sin vida a un hombre en su casa de Gonnet
+2026-04-30T18:01:51.402Z
+https://www.eldia.com/nota/2026-4-30-11-5-0-conmocion-en-la-plata-hallaron-sin-vida-a-un-hombre-en-su-casa-policiales
+choque (sim 1.00 · peso 3.33) · violencia de genero (sim 0.78 · peso 3.28) · corrupcion policial (sim 0.78 · peso 2.61) · moto (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+“La verdad científica se impuso ante la mentira”
+2026-04-30T18:01:51.403Z
+https://www.eldia.com/nota/2026-4-30-4-48-6-la-verdad-cientifica-se-impuso-ante-la-mentira-policiales
+choque (sim 1.00 · peso 3.33) · santa fe (sim 0.78 · peso 3.11) · medicamentos (sim 1.00 · peso 2.30) · moto (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+El delito no pidió "turno" y golpeó "sin anestesia": simuló un dolor de muelas para asaltar a un dentista de La Plata
+2026-04-30T18:01:51.403Z
+https://www.eldia.com/nota/2026-4-30-4-43-6-simulo-un-dolor-de-muelas-para-asaltar-al-dentista-policiales
+choque (sim 1.00 · peso 3.33) · delito en el exterior (sim 0.78 · peso 2.32) · medicamentos (sim 1.00 · peso 2.30) · moto (sim 1.00 · peso 2.20) · reclamo de justicia (sim 0.78 · peso 2.15)
+
+Feroz golpiza en un barrio cerrado de Hernández
+2026-04-30T18:01:51.404Z
+https://www.eldia.com/nota/2026-4-30-4-42-6-feroz-golpiza-en-un-barrio-cerrado-de-hernandez-policiales
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · choque (sim 1.00 · peso 3.33) · santa fe (sim 0.78 · peso 3.11) · medicamentos (sim 1.00 · peso 2.30)
+
+Una mujer arrastrada en un robo y el recuerdo de una tragedia cercana
+2026-04-30T18:01:51.404Z
+https://www.eldia.com/nota/2026-4-30-4-49-6-una-mujer-arrastrada-en-un-robo-y-el-recuerdo-de-una-tragedia-cercana-policiales
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · choque (sim 1.00 · peso 3.33) · medicamentos (sim 1.00 · peso 2.30) · moto (sim 1.00 · peso 2.20)
+
+El entrenador de boxeo acusado de abuso sexual quiere declarar
+2026-04-30T18:01:51.405Z
+https://www.eldia.com/nota/2026-4-30-4-46-6-el-entrenador-de-boxeo-acusado-de-abuso-sexual-quiere-declarar-policiales
+abuso sexual (sim 1.00 · peso 4.57) · choque (sim 1.00 · peso 3.33) · abuso (sim 1.00 · peso 2.30) · medicamentos (sim 1.00 · peso 2.30) · moto (sim 1.00 · peso 2.20)
+
+*La Capital*
+
+Tráfico de armas: cae red integrada por usuarios, armeros, instructores y exempleados de Renar
+2026-04-30T16:45:15Z
+https://www.lacapital.com.ar/policiales/trafico-armas-cae-red-integrada-usuarios-armeros-instructores-y-exempleados-renar-n10256957.html
+violencia armada (sim 0.78 · peso 4.16) · santa fe (sim 1.00 · peso 4.01) · desaparicion de persona (sim 0.78 · peso 3.61) · violencia de genero (sim 0.78 · peso 3.28) · violencia intrafamiliar (sim 0.78 · peso 3.09)
+
+No encontraron signos de violencia en la mujer hallada sin vida en su departamento
+2026-04-30T16:22:56Z
+https://www.lacapital.com.ar/policiales/no-encontraron-signos-violencia-la-mujer-hallada-vida-su-departamento-n10256950.html
+muerte dudosa (sim 1.00 · peso 4.50) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84) · violencia de genero (sim 0.78 · peso 3.28) · santa fe (sim 0.78 · peso 3.11)
+
+Otro frente judicial para un exasesor de Cofyrco: ahora lo acusan por tres estafas
+2026-04-30T15:31:52Z
+https://www.lacapital.com.ar/policiales/otro-frente-judicial-un-exasesor-cofyrco-ahora-lo-acusan-tres-estafas-n10256936.html
+juicio y condena (sim 1.00 · peso 5.44) · fraude con dinero (sim 1.00 · peso 3.85) · estafa (sim 1.00 · peso 3.74) · juicio (sim 1.00 · peso 3.64) · asesinato (sim 1.00 · peso 3.47)
+
+Le robaron cuando fue a buscar a un pasajero de Uber y atrapó al ladrón en dos horas
+2026-04-30T16:14:20Z
+https://www.lacapital.com.ar/policiales/le-robaron-cuando-fue-buscar-un-pasajero-uber-y-atrapo-al-ladron-dos-horas-n10256929.html
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · desaparicion de persona (sim 0.78 · peso 3.61) · santa fe (sim 0.78 · peso 3.11) · allanamiento (sim 1.00 · peso 2.83)
+
+Primer menor condenado por homicidio: “Fue en una gresca familiar por el uso de unas zapatillas”
+2026-04-30T13:08:40Z
+https://www.lacapital.com.ar/policiales/primer-menor-condenado-homicidio-fue-una-gresca-familiar-el-uso-unas-zapatillas-n10256894.html
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 1.00 · peso 5.44) · santa fe (sim 1.00 · peso 4.01) · muerte de menor (sim 0.78 · peso 3.84) · doble homicidio (sim 0.78 · peso 3.70)
+
+Dramático intento de robo en Baigorria: cómo está el hombre amputado con un machete
+2026-04-30T13:06:38Z
+https://www.lacapital.com.ar/policiales/dramatico-intento-robo-baigorria-como-esta-el-hombre-amputado-un-machete-n10256881.html
+robo (sim 1.00 · peso 4.32) · robo y entradera (sim 0.78 · peso 3.89) · santa fe (sim 0.78 · peso 3.11) · corrupcion policial (sim 0.78 · peso 2.61) · agresion (sim 1.00 · peso 2.40)
+
+Barrio Santa Lucía: seguirá preso un acusado de un homicidio ocurrido hace ocho años
+2026-04-29T23:29:34Z
+https://www.lacapital.com.ar/policiales/barrio-santa-lucia-seguira-preso-un-acusado-un-homicidio-ocurrido-hace-ocho-anos-n10256850.html
+homicidio (sim 1.00 · peso 6.26) · robo (sim 1.00 · peso 4.32) · juicio y condena (sim 0.78 · peso 4.21) · robo y entradera (sim 0.78 · peso 3.89) · doble homicidio (sim 0.78 · peso 3.70)
+
+Condenaron al abogado que conectaba a jefes narcos rosarinos presos con sus bandas
+2026-04-29T23:02:38Z
+https://www.lacapital.com.ar/policiales/condenaron-al-abogado-que-conectaba-jefes-narcos-rosarinos-presos-sus-bandas-n10256824.html
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 1.00 · peso 5.44) · narcotrafico (sim 1.00 · peso 4.13) · doble homicidio (sim 0.78 · peso 3.70) · juicio (sim 1.00 · peso 3.64)
+
+Fallo inédito: condenan por abuso sexual con acceso carnal a un preso que no tocó a la víctima
+2026-04-29T23:02:10Z
+https://www.lacapital.com.ar/policiales/fallo-inedito-condenan-abuso-sexual-acceso-carnal-un-preso-que-no-toco-la-victima-n10256812.html
+abuso sexual (sim 1.00 · peso 4.57) · violencia de genero (sim 1.00 · peso 4.23) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84)
+
+Condenan a cinco años de prisión al organizador de una banda polirrubro dirigida desde prisión
+2026-04-29T20:11:55Z
+https://www.lacapital.com.ar/policiales/condenan-cinco-anos-prision-al-organizador-una-banda-polirrubro-dirigida-prision-n10256809.html
+juicio y condena (sim 1.00 · peso 5.44) · robo (sim 1.00 · peso 4.32) · violencia armada (sim 0.78 · peso 4.16) · robo y entradera (sim 0.78 · peso 3.89) · estafa (sim 1.00 · peso 3.74)
+
+Violencia de género: condenado a prisión por amenazar y golpear a su pareja
+2026-04-29T23:21:12Z
+https://www.lacapital.com.ar/policiales/violencia-genero-condenado-prision-amenazar-y-golpear-su-pareja-n10256789.html
+juicio y condena (sim 1.00 · peso 5.44) · robo (sim 1.00 · peso 4.32) · violencia de genero (sim 1.00 · peso 4.23) · violencia armada (sim 0.78 · peso 4.16) · robo y entradera (sim 0.78 · peso 3.89)
+
+Explotación sexual infantil: imputarán a dos sospechosos por integrar una red internacional
+2026-04-30T12:59:45Z
+https://www.lacapital.com.ar/policiales/explotacion-sexual-infantil-imputaran-dos-sospechosos-integrar-una-red-internacional-n10256751.html
+abuso sexual (sim 1.00 · peso 4.57) · violencia de genero (sim 1.00 · peso 4.23) · juicio y condena (sim 0.78 · peso 4.21) · violencia armada (sim 0.78 · peso 4.16) · muerte de menor (sim 0.78 · peso 3.84)
+
+Primer juicio a un menor con el nuevo código penal: lo condenan por el homicidio de su hermano
+2026-04-29T23:20:59Z
+https://www.lacapital.com.ar/policiales/primer-juicio-un-menor-el-nuevo-codigo-penal-lo-condenan-el-homicidio-su-hermano-n10256740.html
+homicidio (sim 1.00 · peso 6.26) · juicio y condena (sim 1.00 · peso 5.44) · muerte de menor (sim 1.00 · peso 4.96) · doble homicidio (sim 0.78 · peso 3.70) · juicio (sim 1.00 · peso 3.64)
+
+*La Voz*
+
+Detuvieron a dos naranjitas en Alberdi y Nueva Córdoba
+2026-02-24T10:41:50.269Z
+https://www.lavoz.com.ar/sucesos/detuvieron-a-dos-naranjitas-en-alberdi-y-nueva-cordoba/
+violencia armada (sim 0.78 · peso 4.16) · violencia de genero (sim 0.78 · peso 3.28) · violencia intrafamiliar (sim 0.78 · peso 3.09) · corrupcion policial (sim 0.78 · peso 2.61) · detenido (sim 1.00 · peso 2.30)
