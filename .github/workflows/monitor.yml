@@ -2,7 +2,9 @@ name: Interior monitor
 
 on:
   schedule:
+    # Cada 10 min (timezone IANA). Solo corre en la rama por defecto (main).
     - cron: "*/10 * * * *"
+      timezone: America/Argentina/Buenos_Aires
   workflow_dispatch:
 
 # Una corrida por rama a la vez: evita dos pushes del mismo estado en paralelo.

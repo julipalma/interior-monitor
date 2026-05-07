@@ -137,11 +137,13 @@ Edita `src/config/sources.ts`. Cada fuente define:
 
 Hay un workflow en `.github/workflows/monitor.yml` que:
 
-- corre cada 10 minutos y manualmente (`workflow_dispatch`)
+- corre cada 10 minutos (cron con zona `America/Argentina/Buenos_Aires`) y manualmente (`workflow_dispatch`)
 - usa una sola corrida activa por rama (`concurrency`) para no pisar el estado
 - usa Node 22
 - ejecuta `npm ci` y `npm run start` con `STATE_DIR=monitor-state`
 - confirma `monitor-state/*.json` en el repo al terminar (fuentes de verdad para URLs vistas)
+
+Si **no aparecen corridas por `schedule`**: el workflow tiene que vivir en la **rama por defecto**. En la lista de Actions, probá el filtro por **evento** (mostrar `schedule`, no solo disparos manuales). Revisá **Settings → Actions → General** (Actions permitidas) y los **minutos** del plan en repos privados. GitHub admite **demoras** en horas punta. Si el workflow estuvo desactivado, un cambio en el cron puede volver a registrar el schedule.
 
 Secrets esperados:
 
