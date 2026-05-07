@@ -53,12 +53,16 @@ Si no hay `SLACK_WEBHOOK_URL`, el monitor imprime una vista previa del mensaje e
 
 ## Estado persistente
 
-En `STATE_DIR` (por defecto `.state`) se guardan:
+En `STATE_DIR` (por defecto `.state` en local) se guardan:
 
 - `seen-urls.json`: URLs ya notificadas.
 - `health-state.json`: rachas de fallas por fuente.
 
 Si limpias ese directorio, el monitor vuelve a considerar todas las URLs como nuevas.
+
+**GitHub Actions** usa `STATE_DIR=monitor-state`: esa carpeta está en el repo y, al terminar cada corrida exitosa, el workflow hace commit y push de los JSON actualizados (`[skip ci]`). Así el estado **no depende de la caché de Actions** y las notas no se repiten entre corridas. En local seguís usando `.state` salvo que definas `STATE_DIR`.
+
+Si migrás desde un setup anterior y querés conservar el historial de vistas, copiá tu `seen-urls.json` local sobre `monitor-state/seen-urls.json` antes del primer run en CI.
 
 ## Variables de entorno principales
 
@@ -69,7 +73,7 @@ Si limpias ese directorio, el monitor vuelve a considerar todas las URLs como nu
 - `FETCH_CONCURRENCY`: concurrencia de fetch HTML (default `3`).
 - `MAX_DEEP_INSPECT`: maximo de URLs a inspeccionar en deteccion profunda (default `400`).
 - `GROUPED_TXT_PATH`: salida TXT agrupada (default `salida-notas.txt`).
-- `STATE_DIR`: directorio de estado (default `.state`).
+- `STATE_DIR`: directorio de estado (default `.state`; en CI del repo es `monitor-state`).
 
 ### Semantica / scoring
 
@@ -118,7 +122,7 @@ Edita `src/config/sources.ts`. Cada fuente define:
 
 ## Salidas
 
-- **Un** mensaje de Slack con notas nuevas (agrupadas por medio, solo URLs), solo si hay notas que pasan filtros.
+- **Un** mensaje de Slack con notas nuevas (por medio: título, fecha, URL y Temas), solo si hay notas que pasan filtros.
 - Archivo TXT agrupado por medio en `GROUPED_TXT_PATH`.
 - Archivos `logs/interior-monitor-YYYY-MM-DD.log`: errores por URL/fase y bloque de salud de fuentes; se borran archivos de más de 30 días.
 - Logs de consola con:
@@ -131,9 +135,10 @@ Edita `src/config/sources.ts`. Cada fuente define:
 Hay un workflow en `.github/workflows/monitor.yml` que:
 
 - corre cada 10 minutos y manualmente (`workflow_dispatch`)
+- usa una sola corrida activa por rama (`concurrency`) para no pisar el estado
 - usa Node 22
-- ejecuta `npm ci` y `npm run start`
-- cachea `.state`
+- ejecuta `npm ci` y `npm run start` con `STATE_DIR=monitor-state`
+- confirma `monitor-state/*.json` en el repo al terminar (fuentes de verdad para URLs vistas)
 
 Secret esperado:
 
@@ -149,5 +154,6 @@ Secret esperado:
 - `src/semantic/`: runtime lexical/hybrid.
 - `src/monitoring/health.ts`: calculo de salud y severidad.
 - `src/state.ts`: persistencia de estado.
+- `monitor-state/`: estado versionado para GitHub Actions (`seen-urls.json`, `health-state.json`).
 - `src/report/groupedTxt.ts`: render de salida TXT.
 
