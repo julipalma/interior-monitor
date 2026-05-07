@@ -24,8 +24,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .state
-          key: interior-state-${{ hashFiles('.state/seen-urls.json') }}
+          key: interior-monitor-state-${{ runner.os }}-v1
           restore-keys: |
+            interior-monitor-state-${{ runner.os }}-
             interior-state-
 
       - name: Ejecutar monitor

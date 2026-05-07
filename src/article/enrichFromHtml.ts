@@ -65,9 +65,6 @@ export async function enrichMatchedArticlesFromHtml(
         url: m.url,
         error: e,
       });
-      if (needsSemantic) {
-        console.error(`[enrich-html] fallo ${m.url}:`, e);
-      }
       /* título: mantener valor del sitemap como antes */
     }
   });

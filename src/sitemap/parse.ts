@@ -1,5 +1,6 @@
 import { XMLParser } from "fast-xml-parser";
 import type { ArticleCandidate } from "../types.js";
+import { decodeHtmlEntities } from "../utils/decodeHtmlEntities.js";
 import { xmlText } from "../utils/text.js";
 
 const parser = new XMLParser({
@@ -54,7 +55,7 @@ export function parseSitemapXml(xml: string): ParsedSitemap {
       if (!loc) continue;
       const lastmod = xmlText(u["lastmod"]);
       const news = extractNewsMeta(u["news"]);
-      const title = news.title ?? loc;
+      const title = news.title ? decodeHtmlEntities(news.title) : loc;
       const publishedAt = news.publishedAt ?? lastmod ?? "";
       entries.push({
         url: loc,

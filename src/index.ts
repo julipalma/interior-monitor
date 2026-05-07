@@ -11,6 +11,7 @@ import {
   HealthTracker,
   healthAlertConfigFromEnv,
 } from "./monitoring/health.js";
+import { appendMonitorLog, initMonitorLogging } from "./logging/monitorLog.js";
 import { formatGroupedReportTxt } from "./report/groupedTxt.js";
 import { inspectArticle } from "./section/detect.js";
 import { createHybridRuntime } from "./semantic/hybridClassifier.js";
@@ -25,6 +26,8 @@ import {
 import { loadFrecuenciaCsvFile } from "./tags/loadFrecuenciaCsv.js";
 import { scoreOptionsFromEnv } from "./tags/scoreArticle.js";
 import type { ArticleCandidate, MatchedArticle, NewsSource } from "./types.js";
+import { canonicalArticleUrl } from "./utils/canonicalUrl.js";
+import { decodeHtmlEntities } from "./utils/decodeHtmlEntities.js";
 import { mapLimit } from "./utils/mapLimit.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -36,7 +39,6 @@ const DEFAULT_TAGS_CSV = join(
 );
 
 const WEBHOOK = process.env.SLACK_WEBHOOK_URL;
-const HEALTH_WEBHOOK = process.env.SLACK_HEALTH_WEBHOOK_URL ?? WEBHOOK;
 const FETCH_CONCURRENCY = Number(process.env.FETCH_CONCURRENCY ?? "3");
 const GROUPED_TXT_PATH = process.env.GROUPED_TXT_PATH ?? "salida-notas.txt";
 /** Máx. notas a inspeccionar con HTML/JSON-LD por medio (por fecha desc.). */
@@ -45,8 +47,6 @@ const ONLY_SIM_ONE = process.env.SEMANTIC_ONLY_SIM_ONE === "1";
 const HEALTH_STREAK_THRESHOLD = Number(
   process.env.HEALTH_STREAK_THRESHOLD ?? "3",
 );
-const HEALTH_NOTIFY_ONLY_ON_ALERT =
-  process.env.HEALTH_NOTIFY_ONLY_ON_ALERT !== "0";
 
 function needsArticleFetch(source: NewsSource): boolean {
   return (
@@ -77,9 +77,9 @@ function limitDeepInspect(
 }
 
 function titleFromInspectHtml(html: string | undefined, base: string): string {
-  if (!html) return base;
+  if (!html) return decodeHtmlEntities(base);
   const t = extractTitleFromHtml(html);
-  return t ?? base;
+  return t ?? decodeHtmlEntities(base);
 }
 
 async function matchForSource(
@@ -129,6 +129,9 @@ async function matchForSource(
       } catch (e) {
         health.markError(source.id, "match", c.url, e);
         console.error(`[${source.id}] fallo al analizar ${c.url}:`, e);
+        void appendMonitorLog(
+          `[${source.id}] match ${c.url}: ${e instanceof Error ? e.stack ?? e.message : String(e)}`,
+        );
         return null;
       }
     },
@@ -137,23 +140,25 @@ async function matchForSource(
   return batch.filter((x): x is MatchedArticle => x != null);
 }
 
-function formatSemanticSlack(m: MatchedArticle): string {
-  const sem = m.semantic;
-  if (!sem?.matches?.length) return "";
-  const tops = sem.matches
-    .slice(0, 3)
-    .map((x) => `${x.tag} (${x.weightedScore.toFixed(2)})`)
-    .join(", ");
-  return `_Temas:_ ${tops}`;
-}
-
+/** Un solo mensaje de Slack: por medio, lista de URLs (sin detalle de errores ni salud). */
 function formatSlackMessage(items: MatchedArticle[]): string {
-  const blocks = items.map((m) => {
-    const base = `*${m.sourceName}*\n${m.title}\n${m.publishedAt || "sin fecha"}\n${m.url}`;
-    const sem = formatSemanticSlack(m);
-    return sem ? `${base}\n${sem}` : base;
+  const order: string[] = [];
+  const by = new Map<string, MatchedArticle[]>();
+  for (const m of items) {
+    if (!by.has(m.sourceName)) {
+      order.push(m.sourceName);
+      by.set(m.sourceName, []);
+    }
+    by.get(m.sourceName)!.push(m);
+  }
+  const blocks = order.map((name) => {
+    const urls = by
+      .get(name)!
+      .map((x) => `• ${x.url}`)
+      .join("\n");
+    return `*${name}*\n${urls}`;
   });
-  return `:newspaper: *Interior monitor* — ${items.length} nota(s) nueva(s)\n\n${blocks.join("\n\n---\n\n")}`;
+  return `:newspaper: *Interior monitor* — ${items.length} nota(s) nueva(s)\n\n${blocks.join("\n\n")}`;
 }
 
 async function loadTagLexicon() {
@@ -178,6 +183,7 @@ async function loadTagLexicon() {
 }
 
 async function main(): Promise<void> {
+  await initMonitorLogging();
   const tagLexicon = await loadTagLexicon();
   const scoreOpts = tagLexicon ? scoreOptionsFromEnv() : null;
   const hybridRuntime = await createHybridRuntime(
@@ -188,7 +194,8 @@ async function main(): Promise<void> {
   const previousHealth = await loadHealthState();
   const health = new HealthTracker(sources);
   const fresh: MatchedArticle[] = [];
-  async function publishHealth(): Promise<void> {
+  /** Errores y salud de fuentes solo en archivo .log (rotación 30 días), nunca en Slack. */
+  async function publishHealthLog(): Promise<void> {
     const { nextState, summary } = health.finalize(
       previousHealth,
       Number.isFinite(HEALTH_STREAK_THRESHOLD) && HEALTH_STREAK_THRESHOLD > 0
@@ -198,31 +205,15 @@ async function main(): Promise<void> {
     await saveHealthState(nextState);
     const alertCfg = healthAlertConfigFromEnv();
     const evalRes = evaluateHealthSeverity(summary, alertCfg);
-    const baseMessage = formatHealthSlackMessage(summary);
-    const alertMessage = formatHealthSlackAlertMessage(summary, evalRes);
+    const block = evalRes.shouldNotify
+      ? formatHealthSlackAlertMessage(summary, evalRes)
+      : formatHealthSlackMessage(summary);
     console.error(
-      `[health] severity=${evalRes.severity} notify=${
-        evalRes.shouldNotify || !HEALTH_NOTIFY_ONLY_ON_ALERT
-      }`,
+      `[health] severity=${evalRes.severity} shouldNotify=${evalRes.shouldNotify} (detalle en log)`,
     );
-    console.error(baseMessage.replace(/\n/g, " | "));
-    if (HEALTH_WEBHOOK && (evalRes.shouldNotify || !HEALTH_NOTIFY_ONLY_ON_ALERT)) {
-      await postSlackWebhook(
-        HEALTH_WEBHOOK,
-        evalRes.shouldNotify ? alertMessage : baseMessage,
-      );
-    } else {
-      process.stdout.write(
-        formatSlackLocalPreview(
-          evalRes.shouldNotify ? alertMessage : baseMessage,
-        ),
-      );
-      console.error(
-        HEALTH_WEBHOOK
-          ? "Health OK: sin alerta operativa, no se envía webhook."
-          : "SLACK_HEALTH_WEBHOOK_URL no definido: arriba está la vista previa del mensaje de salud.",
-      );
-    }
+    await appendMonitorLog(
+      `[health] severity=${evalRes.severity} shouldNotify=${evalRes.shouldNotify}\n${block}`,
+    );
   }
 
   for (const source of sources) {
@@ -233,6 +224,9 @@ async function main(): Promise<void> {
     } catch (e) {
       health.markError(source.id, "sitemap", source.sitemapUrl, e);
       console.error(`[${source.id}] error de sitemap:`, e);
+      await appendMonitorLog(
+        `[${source.id}] sitemap ${source.sitemapUrl}: ${e instanceof Error ? e.stack ?? e.message : String(e)}`,
+      );
       continue;
     }
 
@@ -241,7 +235,8 @@ async function main(): Promise<void> {
     console.error(`[${source.id}] ${matched.length} coinciden con la sección`);
 
     for (const m of matched) {
-      if (!seen.has(m.url)) {
+      const key = canonicalArticleUrl(m.url);
+      if (!seen.has(key)) {
         fresh.push(m);
       }
     }
@@ -249,7 +244,7 @@ async function main(): Promise<void> {
 
   if (fresh.length === 0) {
     console.error("Sin novedades para notificar.");
-    await publishHealth();
+    await publishHealthLog();
     return;
   }
 
@@ -259,6 +254,9 @@ async function main(): Promise<void> {
     hybridTagger: hybridRuntime.tagger,
     onError: ({ sourceId, phase, url, error }) => {
       health.markError(sourceId, phase, url, error);
+      void appendMonitorLog(
+        `[${sourceId}] ${phase} ${url}: ${error instanceof Error ? error.stack ?? error.message : String(error)}`,
+      );
     },
   });
   const outgoing =
@@ -282,9 +280,9 @@ async function main(): Promise<void> {
   }
   if (outgoing.length === 0) {
     console.error("Sin notas de interés para notificar.");
-    for (const m of fresh) seen.add(m.url);
+    for (const m of fresh) seen.add(canonicalArticleUrl(m.url));
     await saveSeen(seen);
-    await publishHealth();
+    await publishHealthLog();
     return;
   }
   await writeFile(
@@ -293,6 +291,10 @@ async function main(): Promise<void> {
     "utf8",
   );
   console.error(`Listado por medio en ${GROUPED_TXT_PATH}`);
+
+  /** Persistir antes de Slack: si el webhook falla o el job corta, no re-notificar lo mismo. */
+  for (const m of fresh) seen.add(canonicalArticleUrl(m.url));
+  await saveSeen(seen);
 
   const message = formatSlackMessage(outgoing);
   if (WEBHOOK) {
@@ -305,12 +307,13 @@ async function main(): Promise<void> {
     );
   }
 
-  for (const m of fresh) seen.add(m.url);
-  await saveSeen(seen);
-  await publishHealth();
+  await publishHealthLog();
 }
 
-main().catch((e) => {
+main().catch(async (e) => {
   console.error(e);
+  await appendMonitorLog(
+    `[fatal] ${e instanceof Error ? e.stack ?? e.message : String(e)}`,
+  ).catch(() => {});
   process.exit(1);
 });

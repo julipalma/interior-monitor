@@ -10,7 +10,7 @@ Monitor de medios que revisa sitemaps, detecta notas de secciones policiales/seg
 - Evita duplicados con estado persistente (`seen-urls.json`).
 - Enriquece notas con scoring semantico (lexical o hybrid).
 - Genera salida agrupada en TXT.
-- Envia notificaciones de novedades y salud operativa a Slack.
+- Envia **un solo** mensaje de Slack con novedades (por medio y lista de URLs). Errores y salud operativa van a archivos `logs/interior-monitor-YYYY-MM-DD.log` (retención 30 días).
 
 ## Requisitos
 
@@ -35,7 +35,6 @@ Configura como minimo:
 
 Opcional recomendado:
 
-- `SLACK_HEALTH_WEBHOOK_URL`
 - `STATE_DIR` (default: `.state`)
 - `GROUPED_TXT_PATH` (default: `salida-notas.txt`)
 
@@ -65,8 +64,8 @@ Si limpias ese directorio, el monitor vuelve a considerar todas las URLs como nu
 
 ### Flujo general
 
-- `SLACK_WEBHOOK_URL`: webhook de novedades.
-- `SLACK_HEALTH_WEBHOOK_URL`: webhook de salud (si falta, usa `SLACK_WEBHOOK_URL`).
+- `SLACK_WEBHOOK_URL`: webhook de novedades (un mensaje por ejecución si hay notas).
+- `INTERIOR_MONITOR_LOG_DIR`: carpeta de logs diarios (default `logs/` en el cwd).
 - `FETCH_CONCURRENCY`: concurrencia de fetch HTML (default `3`).
 - `MAX_DEEP_INSPECT`: maximo de URLs a inspeccionar en deteccion profunda (default `400`).
 - `GROUPED_TXT_PATH`: salida TXT agrupada (default `salida-notas.txt`).
@@ -98,8 +97,9 @@ Si activas hybrid sin `OPENAI_API_KEY`, cae automaticamente a modo lexical.
 
 ### Salud de fuentes (health)
 
+Los umbrales controlan la severidad registrada en el archivo de log (no se envía a Slack).
+
 - `HEALTH_STREAK_THRESHOLD` (default `3`)
-- `HEALTH_NOTIFY_ONLY_ON_ALERT` (default activo)
 - Warning:
   - `HEALTH_WARN_FAILED_PERCENT` (default `15`)
   - `HEALTH_WARN_403_PER_DOMAIN` (default `2`)
@@ -118,12 +118,13 @@ Edita `src/config/sources.ts`. Cada fuente define:
 
 ## Salidas
 
-- Notificacion Slack con notas nuevas.
+- **Un** mensaje de Slack con notas nuevas (agrupadas por medio, solo URLs), solo si hay notas que pasan filtros.
 - Archivo TXT agrupado por medio en `GROUPED_TXT_PATH`.
+- Archivos `logs/interior-monitor-YYYY-MM-DD.log`: errores por URL/fase y bloque de salud de fuentes; se borran archivos de más de 30 días.
 - Logs de consola con:
   - cantidad de URLs recolectadas
   - cantidad de coincidencias por fuente
-  - estado de salud (`ok`, `warning`, `critical`)
+  - resumen de salud en una línea (`severity`, `shouldNotify`; el detalle está en el archivo .log)
 
 ## Ejecucion en GitHub Actions
 

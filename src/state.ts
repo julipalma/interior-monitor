@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { canonicalArticleUrl } from "./utils/canonicalUrl.js";
 
 const STATE_DIR = process.env.STATE_DIR ?? ".state";
 const STATE_FILE = path.join(STATE_DIR, "seen-urls.json");
@@ -12,7 +13,8 @@ export async function loadSeen(): Promise<Set<string>> {
   try {
     const raw = await readFile(STATE_FILE, "utf8");
     const j = JSON.parse(raw) as StateFile;
-    return new Set(Array.isArray(j.seen) ? j.seen : []);
+    const arr = Array.isArray(j.seen) ? j.seen : [];
+    return new Set(arr.map((u) => canonicalArticleUrl(u)));
   } catch {
     return new Set();
   }

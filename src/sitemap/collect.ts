@@ -1,11 +1,13 @@
 import type { ArticleCandidate, NewsSource } from "../types.js";
+import { canonicalArticleUrl } from "../utils/canonicalUrl.js";
 import { fetchText } from "./http.js";
 import { parseSitemapXml } from "./parse.js";
 
 function dedupeByUrl(entries: ArticleCandidate[]): ArticleCandidate[] {
   const map = new Map<string, ArticleCandidate>();
   for (const e of entries) {
-    if (!map.has(e.url)) map.set(e.url, e);
+    const key = canonicalArticleUrl(e.url);
+    if (!map.has(key)) map.set(key, e);
   }
   return [...map.values()];
 }

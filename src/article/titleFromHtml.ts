@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import { decodeHtmlEntities } from "../utils/decodeHtmlEntities.js";
 
 function metaContent($: cheerio.CheerioAPI, selector: string): string | undefined {
   const v = $(selector).attr("content");
@@ -58,12 +59,12 @@ function headlineFromJsonLdScripts($: cheerio.CheerioAPI): string | undefined {
 export function extractTitleFromHtml(html: string): string | undefined {
   const $ = cheerio.load(html);
   const og = metaContent($, 'meta[property="og:title"]');
-  if (og) return og;
+  if (og) return decodeHtmlEntities(og);
   const tw = metaContent($, 'meta[name="twitter:title"]');
-  if (tw) return tw;
+  if (tw) return decodeHtmlEntities(tw);
   const fromLd = headlineFromJsonLdScripts($);
-  if (fromLd) return fromLd;
+  if (fromLd) return decodeHtmlEntities(fromLd);
   const t = $("title").first().text().trim();
-  if (t) return t;
+  if (t) return decodeHtmlEntities(t);
   return undefined;
 }

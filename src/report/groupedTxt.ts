@@ -4,14 +4,11 @@ function formatSemanticLine(m: MatchedArticle): string | undefined {
   const sem = m.semantic;
   if (!sem?.matches?.length) return undefined;
   return sem.matches
-    .map(
-      (x) =>
-        `${x.tag} (sim ${x.similarity.toFixed(2)} · peso ${x.weightedScore.toFixed(2)})`,
-    )
-    .join(" · ");
+    .map((x) => `${x.tag} (${x.weightedScore.toFixed(2)})`)
+    .join(", ");
 }
 
-/** Agrupa por medio, conservando el orden de primera aparición. */
+/** Agrupa por medio: el nombre del medio una sola vez; notas separadas por ---. */
 export function formatGroupedReportTxt(items: MatchedArticle[]): string {
   const order: string[] = [];
   const by = new Map<string, MatchedArticle[]>();
@@ -25,16 +22,18 @@ export function formatGroupedReportTxt(items: MatchedArticle[]): string {
   const blocks: string[] = [];
   for (const name of order) {
     const list = by.get(name)!;
-    const lines: string[] = [`*${name}*`, ""];
-    for (const m of list) {
-      lines.push(m.title);
-      lines.push(m.publishedAt || "sin fecha");
-      lines.push(m.url);
+    const articleChunks = list.map((m) => {
+      const lines = [
+        m.title,
+        m.publishedAt || "sin fecha",
+        m.url,
+      ];
       const semLine = formatSemanticLine(m);
-      if (semLine) lines.push(semLine);
-      lines.push("");
-    }
-    blocks.push(lines.join("\n").trimEnd());
+      if (semLine) lines.push(`Temas: ${semLine}`);
+      return lines.join("\n");
+    });
+    const body = [`*${name}*`, "", articleChunks.join("\n\n---\n\n")];
+    blocks.push(body.join("\n").trimEnd());
   }
   return `${blocks.join("\n\n")}\n`;
 }
