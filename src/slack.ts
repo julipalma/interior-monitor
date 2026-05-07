@@ -5,7 +5,11 @@ export async function postSlackWebhook(
   const res = await fetch(webhookUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json; charset=utf-8" },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({
+      text,
+      unfurl_links: false,
+      unfurl_media: false,
+    }),
   });
   if (!res.ok) {
     const body = await res.text();
