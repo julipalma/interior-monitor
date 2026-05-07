@@ -130,7 +130,7 @@ Edita `src/config/sources.ts`. Cada fuente define:
 
 Hay un workflow en `.github/workflows/monitor.yml` que:
 
-- corre cada 30 minutos y manualmente (`workflow_dispatch`)
+- corre cada 10 minutos y manualmente (`workflow_dispatch`)
 - usa Node 22
 - ejecuta `npm ci` y `npm run start`
 - cachea `.state`
