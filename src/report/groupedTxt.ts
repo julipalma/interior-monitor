@@ -8,6 +8,15 @@ function formatSemanticLine(m: MatchedArticle): string | undefined {
     .join(", ");
 }
 
+/** Una nota: título, fecha, URL y Temas (misma forma para TXT y Slack). */
+export function formatArticleBlockLines(m: MatchedArticle): string[] {
+  const title = m.title?.trim() || m.url;
+  const lines = [title, m.publishedAt || "sin fecha", m.url];
+  const semLine = formatSemanticLine(m);
+  if (semLine) lines.push(`Temas: ${semLine}`);
+  return lines;
+}
+
 /** Agrupa por medio: el nombre del medio una sola vez; notas separadas por ---. */
 export function formatGroupedReportTxt(items: MatchedArticle[]): string {
   const order: string[] = [];
@@ -22,16 +31,7 @@ export function formatGroupedReportTxt(items: MatchedArticle[]): string {
   const blocks: string[] = [];
   for (const name of order) {
     const list = by.get(name)!;
-    const articleChunks = list.map((m) => {
-      const lines = [
-        m.title,
-        m.publishedAt || "sin fecha",
-        m.url,
-      ];
-      const semLine = formatSemanticLine(m);
-      if (semLine) lines.push(`Temas: ${semLine}`);
-      return lines.join("\n");
-    });
+    const articleChunks = list.map((m) => formatArticleBlockLines(m).join("\n"));
     const body = [`*${name}*`, "", articleChunks.join("\n\n---\n\n")];
     blocks.push(body.join("\n").trimEnd());
   }

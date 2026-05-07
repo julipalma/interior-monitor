@@ -12,7 +12,7 @@ import {
   healthAlertConfigFromEnv,
 } from "./monitoring/health.js";
 import { appendMonitorLog, initMonitorLogging } from "./logging/monitorLog.js";
-import { formatGroupedReportTxt } from "./report/groupedTxt.js";
+import { formatArticleBlockLines, formatGroupedReportTxt } from "./report/groupedTxt.js";
 import { inspectArticle } from "./section/detect.js";
 import { createHybridRuntime } from "./semantic/hybridClassifier.js";
 import { collectCandidates } from "./sitemap/collect.js";
@@ -140,7 +140,7 @@ async function matchForSource(
   return batch.filter((x): x is MatchedArticle => x != null);
 }
 
-/** Un solo mensaje de Slack: por medio, lista de URLs (sin detalle de errores ni salud). */
+/** Un solo mensaje de Slack: por medio, sin repetir nombre; cada nota con título, fecha, URL y Temas. */
 function formatSlackMessage(items: MatchedArticle[]): string {
   const order: string[] = [];
   const by = new Map<string, MatchedArticle[]>();
@@ -152,11 +152,9 @@ function formatSlackMessage(items: MatchedArticle[]): string {
     by.get(m.sourceName)!.push(m);
   }
   const blocks = order.map((name) => {
-    const urls = by
-      .get(name)!
-      .map((x) => `• ${x.url}`)
-      .join("\n");
-    return `*${name}*\n${urls}`;
+    const list = by.get(name)!;
+    const chunks = list.map((m) => formatArticleBlockLines(m).join("\n"));
+    return [`*${name}*`, "", chunks.join("\n\n---\n\n")].join("\n");
   });
   return `:newspaper: *Interior monitor* — ${items.length} nota(s) nueva(s)\n\n${blocks.join("\n\n")}`;
 }
