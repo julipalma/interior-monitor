@@ -156,7 +156,9 @@ function formatSlackMessage(items: MatchedArticle[]): string {
     const chunks = list.map((m) => formatArticleBlockLines(m).join("\n"));
     return [`*${name}*`, "", chunks.join("\n\n---\n\n")].join("\n");
   });
-  return `:newspaper: *Interior monitor* — ${items.length} nota(s) nueva(s)\n\n${blocks.join("\n\n")}`;
+  const countLabel =
+    items.length === 1 ? "1 nota nueva" : `${items.length} notas nuevas`;
+  return `:newspaper: *Notas de policiales del interior* — ${countLabel}\n\n${blocks.join("\n\n")}`;
 }
 
 async function loadTagLexicon() {
