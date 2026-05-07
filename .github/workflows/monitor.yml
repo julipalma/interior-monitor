@@ -31,6 +31,8 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           STATE_DIR: monitor-state
           MAX_DEEP_INSPECT: "500"
+          HTTPS_PROXY: ${{ secrets.HTTPS_PROXY }}
+          HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
         run: npm run start
 
       - name: Persistir estado en el repositorio

@@ -72,6 +72,8 @@ Si migrás desde un setup anterior y querés conservar el historial de vistas, c
 - `INTERIOR_MONITOR_LOG_DIR`: carpeta de logs diarios (default `logs/` en el cwd).
 - `FETCH_CONCURRENCY`: concurrencia de fetch HTML (default `3`).
 - `INTERIOR_MONITOR_USER_AGENT` / `INTERIOR_MONITOR_ACCEPT_LANGUAGE`: cabeceras HTTP opcionales (por defecto UA tipo Chrome y `es-AR`).
+- `INTERIOR_MONITOR_FETCH_RETRY`: si no es `0`, ante HTTP 403 o 429 se reintenta una vez tras una pausa (por defecto activo).
+- `HTTPS_PROXY` / `HTTP_PROXY`: proxy opcional; en GitHub Actions configurar como secrets si el medio bloquea la IP del runner.
 - `MAX_DEEP_INSPECT`: maximo de URLs a inspeccionar en deteccion profunda (default `400`).
 - `GROUPED_TXT_PATH`: salida TXT agrupada (default `salida-notas.txt`).
 - `STATE_DIR`: directorio de estado (default `.state`; en CI del repo es `monitor-state`).
@@ -141,9 +143,10 @@ Hay un workflow en `.github/workflows/monitor.yml` que:
 - ejecuta `npm ci` y `npm run start` con `STATE_DIR=monitor-state`
 - confirma `monitor-state/*.json` en el repo al terminar (fuentes de verdad para URLs vistas)
 
-Secret esperado:
+Secrets esperados:
 
 - `SLACK_WEBHOOK_URL`
+- Opcional: `HTTPS_PROXY` / `HTTP_PROXY` si algún medio devuelve 403 desde la IP de Actions.
 
 ## Estructura rapida
 
