@@ -71,6 +71,7 @@ Si migrás desde un setup anterior y querés conservar el historial de vistas, c
 - `SLACK_WEBHOOK_URL`: webhook de novedades (un mensaje por ejecución si hay notas).
 - `INTERIOR_MONITOR_LOG_DIR`: carpeta de logs diarios (default `logs/` en el cwd).
 - `FETCH_CONCURRENCY`: concurrencia de fetch HTML (default `3`).
+- `INTERIOR_MONITOR_USER_AGENT` / `INTERIOR_MONITOR_ACCEPT_LANGUAGE`: cabeceras HTTP opcionales (por defecto UA tipo Chrome y `es-AR`).
 - `MAX_DEEP_INSPECT`: maximo de URLs a inspeccionar en deteccion profunda (default `400`).
 - `GROUPED_TXT_PATH`: salida TXT agrupada (default `salida-notas.txt`).
 - `STATE_DIR`: directorio de estado (default `.state`; en CI del repo es `monitor-state`).
