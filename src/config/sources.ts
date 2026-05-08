@@ -82,10 +82,9 @@ export const sources: NewsSource[] = [
     name: "Misiones Online",
     baseUrl: "https://misionesonline.net/",
     sitemapUrl: "https://misionesonline.net/sitemap.xml",
-    detection: {
-      kind: "json_ld_article_section",
-      sections: ["policiales", "policial"],
-    },
+    candidates: { kind: "rss", url: "https://misionesonline.net/feed/" },
+    detection: { kind: "news_keywords", fragments: ["policial", "seguridad", "judicial"] },
+    semantic: { disableHtmlFetch: true },
     content: {
       rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
     },
@@ -113,6 +112,11 @@ export const sources: NewsSource[] = [
     name: "Ahora",
     baseUrl: "https://ahora.com.ar/",
     sitemapUrl: "https://ahora.com.ar/sitemap_index.xml",
+    candidates: {
+      kind: "front",
+      url: "https://ahora.com.ar/policiales",
+      linkContainerClassAnyOf: ["entry-title", "td-module-title"],
+    },
     detection: { kind: "url_path", fragments: ["/policiales/"] },
     content: {
       rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
@@ -145,6 +149,7 @@ export const sources: NewsSource[] = [
     sitemapUrl:
       "https://www.lavoz.com.ar/arc/outboundfeeds/feeds/sitemap/?outputType=xml",
     detection: { kind: "url_path", fragments: ["/sucesos/"] },
+    semantic: { disableHtmlFetch: true },
     content: {
       rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
     },

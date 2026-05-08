@@ -28,6 +28,7 @@ import { scoreOptionsFromEnv } from "./tags/scoreArticle.js";
 import type { ArticleCandidate, MatchedArticle, NewsSource } from "./types.js";
 import { canonicalArticleUrl } from "./utils/canonicalUrl.js";
 import { decodeHtmlEntities } from "./utils/decodeHtmlEntities.js";
+import { inferTitleFromUrl } from "./utils/titleFromUrl.js";
 import { mapLimit } from "./utils/mapLimit.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -76,10 +77,21 @@ function limitDeepInspect(
   return sorted.slice(0, MAX_DEEP_INSPECT);
 }
 
-function titleFromInspectHtml(html: string | undefined, base: string): string {
-  if (!html) return decodeHtmlEntities(base);
+function bestEffortTitle(base: string, url: string): string {
+  const b = decodeHtmlEntities(base).trim();
+  if (b && b !== url) return b;
+  return inferTitleFromUrl(url) ?? (b || url);
+}
+
+function titleFromInspectHtml(
+  html: string | undefined,
+  base: string,
+  url: string,
+): string {
+  if (!html) return bestEffortTitle(base, url);
   const t = extractTitleFromHtml(html);
-  return t ?? decodeHtmlEntities(base);
+  if (t?.trim()) return t.trim();
+  return bestEffortTitle(base, url);
 }
 
 async function matchForSource(
@@ -92,13 +104,14 @@ async function matchForSource(
     for (const c of candidates) {
       const r = await inspectArticle(c, source.detection);
       if (!r.matches) continue;
-      const title = titleFromInspectHtml(r.html, c.title);
+      const title = titleFromInspectHtml(r.html, c.title, c.url);
       out.push({
         ...c,
         title,
         sourceId: source.id,
         sourceName: source.name,
         content: source.content,
+        disableHtmlFetchForSemantic: source.semantic?.disableHtmlFetch === true,
       });
     }
     return out;
@@ -120,13 +133,14 @@ async function matchForSource(
       try {
         const r = await inspectArticle(c, source.detection);
         if (!r.matches) return null;
-        const title = titleFromInspectHtml(r.html, c.title);
+        const title = titleFromInspectHtml(r.html, c.title, c.url);
         return {
           ...c,
           title,
           sourceId: source.id,
           sourceName: source.name,
           content: source.content,
+          disableHtmlFetchForSemantic: source.semantic?.disableHtmlFetch === true,
         } satisfies MatchedArticle;
       } catch (e) {
         health.markError(source.id, "match", c.url, e);

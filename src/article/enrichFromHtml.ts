@@ -12,6 +12,7 @@ import { mapLimit } from "../utils/mapLimit.js";
 import { buildArticleTextForScoring } from "./articleTextFromHtml.js";
 import { extractTitleFromHtml } from "./titleFromHtml.js";
 import { titleNeedsHtmlFetch } from "./titleNeeds.js";
+import { inferTitleFromUrl } from "../utils/titleFromUrl.js";
 
 export type EnrichFromHtmlOptions = {
   lexicon?: FrecuenciaTagRow[] | null;
@@ -41,10 +42,29 @@ export async function enrichMatchedArticlesFromHtml(
 
   await mapLimit(items, n, async (m) => {
     const needsTitle = titleNeedsHtmlFetch(m.title, m.url);
-    const needsSemantic = Boolean(lexicon);
+    const hasPrefetched = Boolean(m.prefetchedText && m.prefetchedText.trim());
+    const canFetchHtml = m.disableHtmlFetchForSemantic !== true || needsTitle;
+    const needsSemantic = Boolean(lexicon) && (m.disableHtmlFetchForSemantic !== true || hasPrefetched);
     if (!needsTitle && !needsSemantic) return;
 
     try {
+      if (m.disableHtmlFetchForSemantic === true && !needsTitle) {
+        if (needsSemantic && lexicon && hasPrefetched) {
+          const opts = options.scoreOpts ?? scoreOptionsFromEnv();
+          const lexical = scoreArticleAgainstLexicon(
+            [m.title, m.prefetchedText!].filter(Boolean).join("\n"),
+            lexicon,
+            opts,
+          );
+          m.semantic = options.hybridTagger
+            ? await options.hybridTagger(m.prefetchedText!, lexical)
+            : lexical;
+        }
+        return;
+      }
+
+      if (!canFetchHtml) return;
+
       const html = await fetchHtml(m.url);
       if (needsTitle) {
         const t = extractTitleFromHtml(html);
@@ -65,7 +85,11 @@ export async function enrichMatchedArticlesFromHtml(
         url: m.url,
         error: e,
       });
-      /* título: mantener valor del sitemap como antes */
+      // Fallback final: si el HTML está bloqueado (403), al menos inferir un título legible del slug.
+      if (needsTitle) {
+        const inferred = inferTitleFromUrl(m.url);
+        if (inferred) m.title = inferred;
+      }
     }
   });
 }
