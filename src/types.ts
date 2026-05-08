@@ -19,6 +19,16 @@ export type NewsSource = {
   baseUrl: string;
   sitemapUrl: string;
   detection: DetectionConfig;
+  /**
+   * Hints para extracción de contenido (título/bajada/cuerpo editorial).
+   * El extractor es heurístico: estos selectores solo guían la elección del contenedor.
+   */
+  content?: {
+    /** Selectores candidatos (ordenados) para el contenedor principal del artículo. */
+    rootSelectors?: string[];
+    /** Selectores de nodos a remover dentro del contenedor (share/related/nav/etc). */
+    excludeSelectors?: string[];
+  };
 };
 
 export type ArticleCandidate = {
@@ -44,5 +54,6 @@ export type ArticleSemantic = {
 export type MatchedArticle = ArticleCandidate & {
   sourceId: string;
   sourceName: string;
+  content?: NewsSource["content"];
   semantic?: ArticleSemantic;
 };

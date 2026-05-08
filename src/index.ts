@@ -98,6 +98,7 @@ async function matchForSource(
         title,
         sourceId: source.id,
         sourceName: source.name,
+        content: source.content,
       });
     }
     return out;
@@ -125,6 +126,7 @@ async function matchForSource(
           title,
           sourceId: source.id,
           sourceName: source.name,
+          content: source.content,
         } satisfies MatchedArticle;
       } catch (e) {
         health.markError(source.id, "match", c.url, e);

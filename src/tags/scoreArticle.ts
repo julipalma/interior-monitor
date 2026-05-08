@@ -61,6 +61,11 @@ function baseSimilarityForTag(
     if (words.length === 0) return 0;
     const hits = words.filter((w) => articleNorm.includes(w)).length;
     const ratio = hits / words.length;
+    // Para tags de más de un token, exigimos cobertura total (evita falsos positivos
+    // como “muerte de menor” por aparecer “menor” en “menor a 15m3”).
+    if (words.length >= 2) {
+      return hits === words.length ? 1 : 0;
+    }
     if (ratio < opts.minSimilarity) return 0;
     return Math.min(1, 0.55 + 0.45 * ratio);
   }

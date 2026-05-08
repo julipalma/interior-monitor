@@ -10,6 +10,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.elterritorio.com.ar/",
     sitemapUrl: "https://www.elterritorio.com.ar/sitemap.xml",
     detection: { kind: "html_badge", hrefContains: "/policiales/" },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "mdp-0223",
@@ -17,6 +20,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.0223.com.ar/",
     sitemapUrl: "https://www.0223.com.ar/sitemaps_news.xml",
     detection: { kind: "news_keywords", fragments: ["seguridad"] },
+    content: {
+      rootSelectors: ["article", "main article"],
+    },
   },
   {
     id: "la-nueva",
@@ -24,6 +30,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.lanueva.com/",
     sitemapUrl: "https://www.lanueva.com/sitemap_news.xml",
     detection: { kind: "news_keywords", fragments: ["seguridad"] },
+    content: {
+      rootSelectors: ["article", "main article"],
+    },
   },
   {
     id: "nuevo-diario",
@@ -31,6 +40,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.nuevodiarioweb.com.ar/",
     sitemapUrl: "https://www.nuevodiarioweb.com.ar/sitemap.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
+    content: {
+      rootSelectors: ["article.cont-cuerpo", "article", "main article"],
+    },
   },
   {
     id: "todo-jujuy",
@@ -38,6 +50,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.todojujuy.com/",
     sitemapUrl: "https://www.todojujuy.com/sitemap-news.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "lm-neuquen",
@@ -45,6 +60,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.lmneuquen.com/",
     sitemapUrl: "https://www.lmneuquen.com/sitemap.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "el-liberal",
@@ -54,6 +72,9 @@ export const sources: NewsSource[] = [
     detection: {
       kind: "json_ld_article_section",
       sections: ["policiales", "policial"],
+    },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
     },
   },
   {
@@ -65,6 +86,9 @@ export const sources: NewsSource[] = [
       kind: "json_ld_article_section",
       sections: ["policiales", "policial"],
     },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "adn-sur",
@@ -75,6 +99,14 @@ export const sources: NewsSource[] = [
       kind: "url_path",
       fragments: ["/policiales---judiciales/"],
     },
+    content: {
+      rootSelectors: ["div.article-body-content", "div.article-body", "article"],
+      excludeSelectors: [
+        '[data-element*="related" i]',
+        '[class*="related" i]',
+        '[class*="recomend" i]',
+      ],
+    },
   },
   {
     id: "ahora",
@@ -82,6 +114,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://ahora.com.ar/",
     sitemapUrl: "https://ahora.com.ar/sitemap_index.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "el-dia",
@@ -89,6 +124,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.eldia.com/",
     sitemapUrl: "https://www.eldia.com/news_1.xml",
     detection: { kind: "url_suffix", suffix: "-policiales" },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "la-capital",
@@ -96,6 +134,9 @@ export const sources: NewsSource[] = [
     baseUrl: "https://www.lacapital.com.ar/",
     sitemapUrl: "https://www.lacapital.com.ar/sitemap.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
   {
     id: "la-voz",
@@ -104,5 +145,8 @@ export const sources: NewsSource[] = [
     sitemapUrl:
       "https://www.lavoz.com.ar/arc/outboundfeeds/feeds/sitemap/?outputType=xml",
     detection: { kind: "url_path", fragments: ["/sucesos/"] },
+    content: {
+      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
+    },
   },
 ];

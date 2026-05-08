@@ -52,7 +52,7 @@ export async function enrichMatchedArticlesFromHtml(
       }
       if (needsSemantic && lexicon) {
         const opts = options.scoreOpts ?? scoreOptionsFromEnv();
-        const text = buildArticleTextForScoring(html, m.title);
+        const text = buildArticleTextForScoring(html, m.title, m.content);
         const lexical = scoreArticleAgainstLexicon(text, lexicon, opts);
         m.semantic = options.hybridTagger
           ? await options.hybridTagger(text, lexical)
