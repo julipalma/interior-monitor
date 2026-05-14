@@ -1,9 +1,23 @@
 import { readFile } from "node:fs/promises";
+import { normalizeForMatch } from "../utils/normalizeForMatch.js";
 
 export type FrecuenciaTagRow = {
   tag: string;
   cantidad: number;
 };
+
+/** Tags del CSV que no deben usarse para puntuar artículos (fuera de alcance del monitor). */
+const EXCLUDED_LEXICON_TAGS = new Set(
+  [
+    "juicio y condena",
+    "juicio",
+    "juicio politco",
+    "condena",
+    "justicia",
+    "reclamo de justicia",
+    "jury",
+  ].map((t) => normalizeForMatch(t)),
+);
 
 function parseFrecuenciaLine(line: string): FrecuenciaTagRow | null {
   const trimmed = line.trim();
@@ -16,6 +30,7 @@ function parseFrecuenciaLine(line: string): FrecuenciaTagRow | null {
   const cantStr = trimmed.slice(c0 + 1, c1).trim();
   const n = Number(cantStr);
   if (!tag || !Number.isFinite(n) || n < 0) return null;
+  if (EXCLUDED_LEXICON_TAGS.has(normalizeForMatch(tag))) return null;
   return { tag, cantidad: n };
 }
 

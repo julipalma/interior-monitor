@@ -19,7 +19,6 @@ const DEFAULT_GENERIC = new Set(
     "policia",
     "accidente",
     "investigacion",
-    "justicia",
     "violencia",
     "tragedia",
     "denuncia",
