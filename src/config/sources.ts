@@ -71,6 +71,7 @@ export const sources: NewsSource[] = [
     name: "El Liberal",
     baseUrl: "https://www.elliberal.com.ar/",
     sitemapUrl: "https://www.elliberal.com.ar/sitemap.xml",
+    candidateUrlMustContain: "/nota/",
     detection: {
       kind: "json_ld_article_section",
       sections: ["policiales", "policial"],

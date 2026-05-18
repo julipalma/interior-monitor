@@ -40,6 +40,11 @@ export type NewsSource = {
     /** Selectores de nodos a remover dentro del contenedor (share/related/nav/etc). */
     excludeSelectors?: string[];
   };
+  /**
+   * Fragmento que debe estar presente en la URL de cada candidato para ser inspeccionado.
+   * Útil para filtrar páginas de sección que aparecen en sitemaps mixtos (ej. El Liberal).
+   */
+  candidateUrlMustContain?: string;
   /** Opciones para evitar fetch HTML en fuentes bloqueadas (403). */
   semantic?: {
     /** Si está en true, no se hace fetch HTML para scoring/temas (se intenta con `prefetchedText`). */

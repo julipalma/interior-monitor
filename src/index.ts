@@ -100,6 +100,17 @@ async function matchForSource(
   candidates: ArticleCandidate[],
   health: HealthTracker,
 ): Promise<MatchedArticle[]> {
+  const urlFilter = source.candidateUrlMustContain;
+  const filtered = urlFilter
+    ? candidates.filter((c) => c.url.includes(urlFilter))
+    : candidates;
+  if (urlFilter && filtered.length < candidates.length) {
+    console.error(
+      `[${source.id}] ${candidates.length - filtered.length} candidato(s) descartado(s) por filtro de URL`,
+    );
+  }
+  candidates = filtered;
+
   if (!needsArticleFetch(source)) {
     const out: MatchedArticle[] = [];
     for (const c of candidates) {
