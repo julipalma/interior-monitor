@@ -55,7 +55,11 @@ function domainOf(url: string): string {
   }
 }
 
-type SourceHealthMutable = SourceRunHealth & { _phases: Set<ErrorPhase> };
+type SourceHealthMutable = SourceRunHealth & {
+  _phases: Set<ErrorPhase>;
+  /** true solo si falló la recolección de candidatos/sitemap; artículos individuales no cuentan. */
+  hadCandidateError: boolean;
+};
 
 export class HealthTracker {
   private bySource = new Map<string, SourceHealthMutable>();
@@ -69,6 +73,7 @@ export class HealthTracker {
         sourceId: s.id,
         sourceName: s.name,
         hadError: false,
+        hadCandidateError: false,
         errors: 0,
         _phases: new Set<ErrorPhase>(),
       });
@@ -81,6 +86,9 @@ export class HealthTracker {
     h.hadError = true;
     h.errors += 1;
     h._phases.add(phase);
+    if (phase === "sitemap") {
+      h.hadCandidateError = true;
+    }
 
     const code = parseHttpStatusFromError(error);
     if (code === 403) {
@@ -102,17 +110,19 @@ export class HealthTracker {
 
     for (const s of this.sources) {
       const row = this.bySource.get(s.id);
-      const hadError = Boolean(row?.hadError);
+      // El streak solo sube si la fuente no pudo ni recolectar candidatos.
+      // Errores en artículos individuales (match/enrich) son normales en web scraping.
+      const hadCandidateError = Boolean(row?.hadCandidateError);
       const prev = next[s.id] ?? 0;
-      const current = hadError ? prev + 1 : 0;
+      const current = hadCandidateError ? prev + 1 : 0;
       next[s.id] = current;
-      if (hadError && current >= streakThreshold) {
+      if (hadCandidateError && current >= streakThreshold) {
         streakAlerts.push({ sourceId: s.id, sourceName: s.name, streak: current });
       }
       bySource.push({
         sourceId: s.id,
         sourceName: s.name,
-        hadError,
+        hadError: Boolean(row?.hadError),
         errors: row?.errors ?? 0,
       });
     }

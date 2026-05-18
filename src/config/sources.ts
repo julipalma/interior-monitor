@@ -107,21 +107,9 @@ export const sources: NewsSource[] = [
       ],
     },
   },
-  {
-    id: "ahora",
-    name: "Ahora",
-    baseUrl: "https://ahora.com.ar/",
-    sitemapUrl: "https://ahora.com.ar/sitemap_index.xml",
-    candidates: {
-      kind: "front",
-      url: "https://ahora.com.ar/policiales",
-      linkContainerClassAnyOf: ["entry-title", "td-module-title"],
-    },
-    detection: { kind: "url_path", fragments: ["/policiales/"] },
-    content: {
-      rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
-    },
-  },
+  // ahora.com.ar deshabilitado: Cloudflare bloquea todo el dominio con 403
+  // (homepage, sitemap, RSS y listado de policiales). 155+ corridas fallidas.
+  // Reactivar si el medio levanta el bloqueo o se consigue proxy residencial.
   {
     id: "el-dia",
     name: "El Día",
