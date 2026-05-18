@@ -9,7 +9,9 @@ export const sources: NewsSource[] = [
     name: "El Territorio",
     baseUrl: "https://www.elterritorio.com.ar/",
     sitemapUrl: "https://www.elterritorio.com.ar/sitemap.xml",
-    detection: { kind: "html_badge", hrefContains: "/policiales/" },
+    candidates: { kind: "rss", url: "https://www.elterritorio.com.ar/rss/policiales" },
+    detection: { kind: "url_path", fragments: ["/noticias/"] },
+    semantic: { disableHtmlFetch: true },
     content: {
       rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
     },
