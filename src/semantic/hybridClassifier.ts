@@ -197,7 +197,7 @@ function mergeScores(
   out.sort((a, b) => b.weightedScore - a.weightedScore);
   const matches = out.slice(0, scoreOpts.topMatches);
   return {
-    score: matches[0]?.weightedScore ?? 0,
+    score: matches.reduce((sum, m) => sum + m.weightedScore, 0),
     matches,
   };
 }
@@ -206,7 +206,7 @@ export async function createHybridRuntime(
   lexicon: FrecuenciaTagRow[] | null,
   scoreOpts: ScoreArticleOptions,
 ): Promise<HybridRuntime> {
-  const minInterestScore = numberFromEnv("SEMANTIC_MIN_INTEREST_SCORE", 1.2);
+  const minInterestScore = numberFromEnv("SEMANTIC_MIN_INTEREST_SCORE", 4.0);
   const requireMatch = process.env.SEMANTIC_REQUIRE_MATCH !== "0";
   const cfg = getHybridConfigFromEnv();
   if (!lexicon || lexicon.length === 0) {

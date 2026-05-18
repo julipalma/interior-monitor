@@ -87,7 +87,7 @@ Si migrás desde un setup anterior y querés conservar el historial de vistas, c
 - `SEMANTIC_GENERIC_MULTIPLIER`
 - `SEMANTIC_GENERIC_TAGS`
 - `SEMANTIC_REQUIRE_MATCH` (default activo)
-- `SEMANTIC_MIN_INTEREST_SCORE` (default `1.2`)
+- `SEMANTIC_MIN_INTEREST_SCORE` (default `4.0`; es la suma del top-5 de scores, no el máximo)
 - `SEMANTIC_ONLY_SIM_ONE=1` (solo deja pasar notas con algun tag sim=1.00)
 
 ### Modo hybrid (OpenAI)

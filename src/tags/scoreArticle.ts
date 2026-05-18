@@ -112,7 +112,7 @@ export function scoreArticleAgainstLexicon(
 
   matches.sort((a, b) => b.weightedScore - a.weightedScore);
   const top = matches.slice(0, opts.topMatches);
-  const score = top.length > 0 ? top[0]!.weightedScore : 0;
+  const score = top.reduce((sum, m) => sum + m.weightedScore, 0);
   return { score, matches: top };
 }
 
