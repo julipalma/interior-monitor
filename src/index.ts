@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import { writeFile } from "node:fs/promises";
 import { enrichMatchedArticlesFromHtml } from "./article/enrichFromHtml.js";
 import { extractTitleFromHtml } from "./article/titleFromHtml.js";
+import { isMinorAccident } from "./filters/accidentSeverity.js";
 import { sources } from "./config/sources.js";
 import {
   evaluateHealthSeverity,
@@ -285,14 +286,26 @@ async function main(): Promise<void> {
               sem.score >= hybridRuntime.minInterestScore,
           );
           if (!passes) return false;
+          if (isMinorAccident(m)) return false;
           if (!ONLY_SIM_ONE) return true;
           return sem!.matches.some((x) => x.similarity >= 1);
         })
       : fresh;
   if (outgoing.length < fresh.length) {
-    console.error(
-      `[semantic] ${fresh.length - outgoing.length} nota(s) descartada(s) por falta de interés temático.`,
-    );
+    const minorAccidentCount = fresh.filter(
+      (m) => m.semantic && isMinorAccident(m),
+    ).length;
+    const semanticCount = fresh.length - outgoing.length - minorAccidentCount;
+    if (semanticCount > 0) {
+      console.error(
+        `[semantic] ${semanticCount} nota(s) descartada(s) por falta de interés temático.`,
+      );
+    }
+    if (minorAccidentCount > 0) {
+      console.error(
+        `[accident-filter] ${minorAccidentCount} nota(s) descartada(s) como accidente vial menor.`,
+      );
+    }
   }
   if (outgoing.length === 0) {
     console.error("Sin notas de interés para notificar.");
