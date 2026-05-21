@@ -8,10 +8,10 @@ function formatSemanticLine(m: MatchedArticle): string | undefined {
     .join(", ");
 }
 
-/** Una nota: título (con 📹 si tiene video), fecha, URL y Temas (misma forma para TXT y Slack). */
+/** Una nota: título (con ▶️ si tiene video), fecha, URL y Temas (misma forma para TXT y Slack). */
 export function formatArticleBlockLines(m: MatchedArticle): string[] {
   const rawTitle = m.title?.trim() || m.url;
-  const title = m.hasVideo ? `📹 ${rawTitle}` : rawTitle;
+  const title = m.hasVideo ? `▶️ ${rawTitle}` : rawTitle;
   const lines = [title, m.publishedAt || "sin fecha", m.url];
   const semLine = formatSemanticLine(m);
   if (semLine) lines.push(`Temas: ${semLine}`);
