@@ -2,8 +2,8 @@ name: Interior monitor
 
 on:
   schedule:
-    # Cada 10 min con offset de 7' (7, 17, 27, 37, 47, 57). Solo corre en la rama por defecto (main).
-    - cron: "7,17,27,37,47,57 * * * *"
+    # Cada 10 min. Solo corre en la rama por defecto (main).
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 # Una corrida por rama a la vez: evita dos pushes del mismo estado en paralelo.
