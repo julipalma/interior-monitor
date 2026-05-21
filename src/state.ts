@@ -6,7 +6,7 @@ const STATE_DIR = process.env.STATE_DIR ?? ".state";
 const STATE_FILE = path.join(STATE_DIR, "seen-urls.json");
 const HEALTH_STATE_FILE = path.join(STATE_DIR, "health-state.json");
 
-const PRUNE_DAYS = 30;
+const PRUNE_DAYS = Number(process.env.PRUNE_DAYS ?? "60");
 const PRUNE_MS = PRUNE_DAYS * 24 * 60 * 60 * 1000;
 
 type StateFile = {
