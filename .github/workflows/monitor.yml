@@ -3,7 +3,7 @@ name: Interior monitor
 on:
   schedule:
     # Cada 10 min con offset de 7' (7, 17, 27, 37, 47, 57). Solo corre en la rama por defecto (main).
-    - cron: "7-57/10 * * * *"
+    - cron: "7,17,27,37,47,57 * * * *"
       timezone: America/Argentina/Buenos_Aires
   workflow_dispatch:
 
