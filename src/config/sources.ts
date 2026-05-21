@@ -60,7 +60,7 @@ export const sources: NewsSource[] = [
     id: "lm-neuquen",
     name: "LM Neuquén",
     baseUrl: "https://www.lmneuquen.com/",
-    sitemapUrl: "https://www.lmneuquen.com/sitemap.xml",
+    sitemapUrl: "https://www.lmneuquen.com/news-sitemap.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
     content: {
       rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
@@ -127,7 +127,7 @@ export const sources: NewsSource[] = [
     id: "la-capital",
     name: "La Capital",
     baseUrl: "https://www.lacapital.com.ar/",
-    sitemapUrl: "https://www.lacapital.com.ar/sitemap.xml",
+    sitemapUrl: "https://www.lacapital.com.ar/sitemap-news.xml",
     detection: { kind: "url_path", fragments: ["/policiales/"] },
     content: {
       rootSelectors: ["article", '[itemprop="articleBody"]', "main article"],
