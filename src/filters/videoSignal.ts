@@ -67,8 +67,10 @@ export function hasVideoFromHtml(html: string): boolean {
   // AMP YouTube
   if (/<amp-youtube[\s>]/i.test(html)) return true;
 
-  // YouTube embed en iframe (src directo o lazy)
-  if (/(?:data-td-src-property|src)="[^"]*youtube\.com\/embed\//i.test(html)) return true;
+  // YouTube embed en iframe (src directo o lazy).
+  // Requiere ID alfanumérico real después de /embed/ para evitar falsos positivos
+  // con placeholders de template como ${videoID} (ej. El Liberal).
+  if (/(?:data-td-src-property|src)="[^"]*youtube\.com\/embed\/[a-zA-Z0-9_-]+/i.test(html)) return true;
 
   // Tag nativo <video con atributo src real (no placeholder)
   if (/<video[^>]+src="https?:\/\//i.test(html)) return true;
