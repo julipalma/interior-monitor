@@ -83,4 +83,6 @@ export type MatchedArticle = ArticleCandidate & {
   content?: NewsSource["content"];
   disableHtmlFetchForSemantic?: boolean;
   semantic?: ArticleSemantic;
+  /** true si se detectó un reproductor de video en el título o en el HTML de la nota. */
+  hasVideo?: boolean;
 };

@@ -13,6 +13,7 @@ import { buildArticleTextForScoring } from "./articleTextFromHtml.js";
 import { extractTitleFromHtml } from "./titleFromHtml.js";
 import { titleNeedsHtmlFetch } from "./titleNeeds.js";
 import { inferTitleFromUrl } from "../utils/titleFromUrl.js";
+import { hasVideoFromHtml } from "../filters/videoSignal.js";
 
 export type EnrichFromHtmlOptions = {
   lexicon?: FrecuenciaTagRow[] | null;
@@ -69,6 +70,10 @@ export async function enrichMatchedArticlesFromHtml(
       if (needsTitle) {
         const t = extractTitleFromHtml(html);
         if (t) m.title = t;
+      }
+      // Detectar video en el HTML si aún no fue marcado por el título
+      if (!m.hasVideo) {
+        m.hasVideo = hasVideoFromHtml(html);
       }
       if (needsSemantic && lexicon) {
         const opts = options.scoreOpts ?? scoreOptionsFromEnv();

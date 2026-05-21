@@ -4,6 +4,8 @@ import { writeFile } from "node:fs/promises";
 import { enrichMatchedArticlesFromHtml } from "./article/enrichFromHtml.js";
 import { extractTitleFromHtml } from "./article/titleFromHtml.js";
 import { isMinorAccident } from "./filters/accidentSeverity.js";
+import { isJudicialFollowup } from "./filters/judicialFollowup.js";
+import { hasVideoFromTitle } from "./filters/videoSignal.js";
 import { sources } from "./config/sources.js";
 import {
   evaluateHealthSeverity,
@@ -13,7 +15,7 @@ import {
   healthAlertConfigFromEnv,
 } from "./monitoring/health.js";
 import { appendMonitorLog, initMonitorLogging } from "./logging/monitorLog.js";
-import { formatArticleBlockLines, formatGroupedReportTxt } from "./report/groupedTxt.js";
+import { formatArticleBlockLines, formatGroupedReportTxt, sortVideoFirst } from "./report/groupedTxt.js";
 import { inspectArticle } from "./section/detect.js";
 import { createHybridRuntime } from "./semantic/hybridClassifier.js";
 import { collectCandidates } from "./sitemap/collect.js";
@@ -180,7 +182,7 @@ function formatSlackMessage(items: MatchedArticle[]): string {
     by.get(m.sourceName)!.push(m);
   }
   const blocks = order.map((name) => {
-    const list = by.get(name)!;
+    const list = sortVideoFirst(by.get(name)!);
     const chunks = list.map((m) => formatArticleBlockLines(m).join("\n"));
     return [`*${name}*`, "", chunks.join("\n\n---\n\n")].join("\n");
   });
@@ -276,6 +278,11 @@ async function main(): Promise<void> {
     return;
   }
 
+  // Detección de video por título (sin fetch extra); el HTML la complementará en enrichment
+  for (const m of fresh) {
+    if (hasVideoFromTitle(m.title)) m.hasVideo = true;
+  }
+
   await enrichMatchedArticlesFromHtml(fresh, FETCH_CONCURRENCY, {
     lexicon: tagLexicon,
     scoreOpts: scoreOpts ?? undefined,
@@ -298,6 +305,7 @@ async function main(): Promise<void> {
           );
           if (!passes) return false;
           if (isMinorAccident(m)) return false;
+          if (isJudicialFollowup(m)) return false;
           if (!ONLY_SIM_ONE) return true;
           return sem!.matches.some((x) => x.similarity >= 1);
         })
@@ -306,7 +314,10 @@ async function main(): Promise<void> {
     const minorAccidentCount = fresh.filter(
       (m) => m.semantic && isMinorAccident(m),
     ).length;
-    const semanticCount = fresh.length - outgoing.length - minorAccidentCount;
+    const judicialCount = fresh.filter(
+      (m) => m.semantic && !isMinorAccident(m) && isJudicialFollowup(m),
+    ).length;
+    const semanticCount = fresh.length - outgoing.length - minorAccidentCount - judicialCount;
     if (semanticCount > 0) {
       console.error(
         `[semantic] ${semanticCount} nota(s) descartada(s) por falta de interés temático.`,
@@ -315,6 +326,11 @@ async function main(): Promise<void> {
     if (minorAccidentCount > 0) {
       console.error(
         `[accident-filter] ${minorAccidentCount} nota(s) descartada(s) como accidente vial menor.`,
+      );
+    }
+    if (judicialCount > 0) {
+      console.error(
+        `[judicial-filter] ${judicialCount} nota(s) descartada(s) como seguimiento judicial.`,
       );
     }
   }
