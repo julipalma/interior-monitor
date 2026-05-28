@@ -36,6 +36,9 @@ export function hasVideoFromTitle(title: string): boolean {
   // "Video: así detuvieron..." / "VIDEO. El desencadenante..." / "Video | ..."
   if (/^video[\s.:|]/.test(norm)) return true;
 
+  // "el video clave que...", "el video exclusivo que...", etc.
+  if (/\bel video \w+ que\b/.test(norm)) return true;
+
   // Frases específicas dentro del título
   return VIDEO_TITLE_PHRASES.some((phrase) => norm.includes(phrase));
 }
