@@ -16,6 +16,7 @@ import {
 } from "./monitoring/health.js";
 import { appendMonitorLog, initMonitorLogging } from "./logging/monitorLog.js";
 import { formatArticleBlockLines, formatGroupedReportTxt, sortVideoFirst } from "./report/groupedTxt.js";
+import { buildFeedItems, loadJsonFeed, mergeFeed, saveJsonFeed } from "./report/jsonFeed.js";
 import { inspectArticle } from "./section/detect.js";
 import { createHybridRuntime } from "./semantic/hybridClassifier.js";
 import { collectCandidates } from "./sitemap/collect.js";
@@ -45,6 +46,8 @@ const DEFAULT_TAGS_CSV = join(
 const WEBHOOK = process.env.SLACK_WEBHOOK_URL;
 const FETCH_CONCURRENCY = Number(process.env.FETCH_CONCURRENCY ?? "3");
 const GROUPED_TXT_PATH = process.env.GROUPED_TXT_PATH ?? "salida-notas.txt";
+const JSON_FEED_PATH = process.env.JSON_FEED_PATH ?? "public/notas.json";
+const JSON_FEED_MAX_SCORE = Number(process.env.JSON_FEED_MAX_SCORE ?? "25");
 /** Máx. notas a inspeccionar con HTML/JSON-LD por medio (por fecha desc.). */
 const MAX_DEEP_INSPECT = Number(process.env.MAX_DEEP_INSPECT ?? "400");
 const ONLY_SIM_ONE = process.env.SEMANTIC_ONLY_SIM_ONE === "1";
@@ -351,6 +354,14 @@ async function main(): Promise<void> {
   /** Persistir antes de Slack: si el webhook falla o el job corta, no re-notificar lo mismo. */
   for (const m of fresh) seen.add(canonicalArticleUrl(m.url));
   await saveSeen(seen);
+
+  const existingFeed = await loadJsonFeed(JSON_FEED_PATH);
+  const maxScore = Number.isFinite(JSON_FEED_MAX_SCORE) && JSON_FEED_MAX_SCORE > 0
+    ? JSON_FEED_MAX_SCORE
+    : 25;
+  const updatedFeed = mergeFeed(existingFeed, buildFeedItems(outgoing, maxScore));
+  await saveJsonFeed(JSON_FEED_PATH, updatedFeed);
+  console.error(`Feed JSON actualizado: ${updatedFeed.length} nota(s) en ${JSON_FEED_PATH}`);
 
   const message = formatSlackMessage(outgoing);
   if (WEBHOOK) {

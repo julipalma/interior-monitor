@@ -76,6 +76,8 @@ Si migrás desde un setup anterior y querés conservar el historial de vistas, c
 - `HTTPS_PROXY` / `HTTP_PROXY`: proxy opcional; en GitHub Actions configurar como secrets si el medio bloquea la IP del runner.
 - `MAX_DEEP_INSPECT`: maximo de URLs a inspeccionar en deteccion profunda (default `400`).
 - `GROUPED_TXT_PATH`: salida TXT agrupada (default `salida-notas.txt`).
+- `JSON_FEED_PATH`: ruta del feed JSON (default `public/notas.json`). Se actualiza en cada corrida acumulando notas de los últimos 7 días, ordenadas de más nueva a más vieja.
+- `JSON_FEED_MAX_SCORE`: score semántico máximo para normalizar `relevancia` (default `25`). Divide `semantic.score` por este valor y lo acota a 1.0.
 - `STATE_DIR`: directorio de estado (default `.state`; en CI del repo es `monitor-state`).
 
 ### Semantica / scoring
