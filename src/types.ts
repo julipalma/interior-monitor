@@ -85,4 +85,6 @@ export type MatchedArticle = ArticleCandidate & {
   semantic?: ArticleSemantic;
   /** true si se detectó un reproductor de video en el título o en el HTML de la nota. */
   hasVideo?: boolean;
+  /** Texto editorial extraído del HTML (título + bajada + cuerpo), solo para el feed JSON. */
+  body?: string;
 };

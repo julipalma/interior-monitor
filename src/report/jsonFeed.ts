@@ -7,6 +7,7 @@ export type FeedItem = {
   fuente: string;
   fecha_publicacion: string;
   relevancia: number;
+  cuerpo?: string;
 };
 
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
@@ -34,6 +35,7 @@ export function buildFeedItems(
     fuente: m.sourceName,
     fecha_publicacion: toLocalIso(m.publishedAt),
     relevancia: computeRelevancia(m, maxScore),
+    ...(m.body ? { cuerpo: m.body } : {}),
   }));
 }
 
