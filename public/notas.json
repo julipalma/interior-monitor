@@ -1,5 +1,82 @@
 [
   {
+    "url": "https://www.0223.com.ar/nota/2026-6-30-14-46-0-insolito-le-corto-la-novela-que-estaba-mirando-en-el-celu-y-se-robo-la-recaudacion-del-supermercado",
+    "titulo_original": "Insólito: le cortó la novela que estaba mirando en el celu y se robó la recaudación del supermercado",
+    "fuente": "MDP 0223",
+    "fecha_publicacion": "2026-06-30T17:46:24",
+    "relevancia": 0.44
+  },
+  {
+    "url": "https://www.0223.com.ar/nota/2026-6-30-14-43-0-video-intentaba-robar-una-camioneta-y-fue-detectado-por-las-camaras-del-com",
+    "titulo_original": "Video: intentaba robar una camioneta y fue detectado por las cámaras del COM",
+    "fuente": "MDP 0223",
+    "fecha_publicacion": "2026-06-30T17:44:09",
+    "relevancia": 0.42
+  },
+  {
+    "url": "https://www.adnsur.com.ar/policiales---judiciales/el-oscuro-dato-detras-del-asesinato-que-conmociono-a-un-paraje-de-chubut_a6a43f17e0932c618ef6931a1",
+    "titulo_original": "El oscuro dato detrás del asesinato que conmocionó a un paraje de Chubut",
+    "fuente": "ADN Sur",
+    "fecha_publicacion": "2026-06-30T17:35:09",
+    "relevancia": 0.88
+  },
+  {
+    "url": "https://www.elliberal.com.ar/nota/84320/2026/06/un-nino-de-3-anos-permanece-en-estado-critico-tras-caer-a-una-piscina-",
+    "titulo_original": "Un niño de 3 años permanece en estado crítico tras caer a una piscina",
+    "fuente": "El Liberal",
+    "fecha_publicacion": "2026-06-30T17:26:01",
+    "relevancia": 0.29
+  },
+  {
+    "url": "https://www.adnsur.com.ar/policiales---judiciales/juicio-por-la-muerte-de--huesito---acusan-al-sobrino-de-la--rona--castro-de-atropellarlo-y-escapar_a6a43effa0932c618ef6912b8",
+    "titulo_original": "Juicio por la muerte de “Huesito”: acusan al sobrino de la “Roña” Castro de atropellarlo y escapar",
+    "fuente": "ADN Sur",
+    "fecha_publicacion": "2026-06-30T17:03:26",
+    "relevancia": 0.27
+  },
+  {
+    "url": "https://www.elliberal.com.ar/nota/84317/2026/06/prorrogan-la-detencion-nahuel-ferreyra-que-atropello-y-mato-a-lourdes-mariana-ibanez",
+    "titulo_original": "Prorrogan la detención Nahuel Ferreyra que atropelló y mató a Lourdes Mariana Ibáñez",
+    "fuente": "El Liberal",
+    "fecha_publicacion": "2026-06-30T16:42:31",
+    "relevancia": 0.4
+  },
+  {
+    "url": "https://www.adnsur.com.ar/policiales---judiciales/tras-la-muerte-de-angel--auditaron-el-fuero-de-familia--las-falencias-que-detectaron-y-que-medidas-tomaran_a6a43ea520932c618ef68ab7d",
+    "titulo_original": "Tras la muerte de Ángel, auditaron el fuero de Familia: las falencias que detectaron y qué medidas tomarán",
+    "fuente": "ADN Sur",
+    "fecha_publicacion": "2026-06-30T16:42:01",
+    "relevancia": 0.62
+  },
+  {
+    "url": "https://www.adnsur.com.ar/policiales---judiciales/-poco-disimulado---lo-sorprendieron-cargando-un-tanque-de-agua-robado-de-una-obra-en-construccion_a6a43e8420932c618ef688852",
+    "titulo_original": "“Poco disimulado”: lo sorprendieron cargando un tanque de agua robado de una obra en construcción",
+    "fuente": "ADN Sur",
+    "fecha_publicacion": "2026-06-30T16:33:51",
+    "relevancia": 0.48
+  },
+  {
+    "url": "https://www.elliberal.com.ar/nota/84316/2026/06/central-cordoba-aparto-de-forma-preventiva-a-un-jugador-denunciado-por-abuso-sexual",
+    "titulo_original": "Central Córdoba apartó de forma preventiva a un jugador denunciado por abuso sexual",
+    "fuente": "El Liberal",
+    "fecha_publicacion": "2026-06-30T16:32:42",
+    "relevancia": 0.44
+  },
+  {
+    "url": "https://www.0223.com.ar/nota/2026-6-30-13-30-0-pidieron-25-anos-de-prision-para-el-ex-policia-autor-de-tres-abusos-sexuales",
+    "titulo_original": "Pidieron 25 años de prisión para el ex policía autor de tres abusos sexuales",
+    "fuente": "MDP 0223",
+    "fecha_publicacion": "2026-06-30T16:31:01",
+    "relevancia": 0.58
+  },
+  {
+    "url": "https://www.0223.com.ar/nota/2026-6-30-12-57-0-robo-medidores-en-busca-de-bronce-dejo-sin-agua-al-barrio-y-quedo-escrachado",
+    "titulo_original": "Robó medidores en busca de bronce, dejó sin agua al barrio y quedó escrachado",
+    "fuente": "MDP 0223",
+    "fecha_publicacion": "2026-06-30T15:58:01",
+    "relevancia": 0.36
+  },
+  {
     "url": "https://www.lmneuquen.com/policiales/perpetua-el-femicida-mabel-mena-la-mato-una-punalada-el-corazon-y-se-fugo-n1244192",
     "titulo_original": "Perpetua para el femicida de Mabel Mena: la mató de una puñalada en el corazón y se fugó",
     "fuente": "LM Neuquén",
@@ -28,11 +105,25 @@
     "relevancia": 0.65
   },
   {
+    "url": "https://www.elliberal.com.ar/nota/84321/2026/06/excarcelan-con-restricciones-a-un-joven-acusado-de-golpear-y-amenazar-a-su-pareja",
+    "titulo_original": "Excarcelan con restricciones a un joven acusado de golpear y amenazar a su pareja",
+    "fuente": "El Liberal",
+    "fecha_publicacion": "2026-06-30T15:00:00",
+    "relevancia": 0.51
+  },
+  {
     "url": "https://www.adnsur.com.ar/policiales---judiciales/se-nego-a-un-control--ataco-a-un-policia-y--10-dias-despues--fue-hallado-con-un-arma--ira-a-prision_a6a43cbf30932c618ef662b1b",
     "titulo_original": "Se negó a un control, atacó a un policía y, 10 días después, fue hallado con un arma: irá a prisión",
     "fuente": "ADN Sur",
     "fecha_publicacion": "2026-06-30T14:53:33",
     "relevancia": 0.35
+  },
+  {
+    "url": "https://www.elliberal.com.ar/nota/84322/2026/06/prorrogan-la-detencion-de-un-hombre-que-golpeaba-y-amenazaba-a-familiares",
+    "titulo_original": "Prorrogan la detención de un hombre que golpeaba y amenazaba a familiares",
+    "fuente": "El Liberal",
+    "fecha_publicacion": "2026-06-30T14:52:00",
+    "relevancia": 0.38
   },
   {
     "url": "https://www.adnsur.com.ar/policiales---judiciales/encontraron-a-una-adolescente-de-14-anos-inconsciente-y-denunciaron-que-habria-sido-golpeada-dos-veces_a6a43caa10932c618ef661936",
