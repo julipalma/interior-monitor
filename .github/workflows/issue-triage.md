@@ -15,10 +15,6 @@ permissions: read-all
 
 network: defaults
 
-# # This workflow runs often, so you can use a small model to keep costs down.
-# engine:
-#   model: small
-
 safe-outputs:
   add-labels:
     max: 5
@@ -37,7 +33,9 @@ tools:
     min-integrity: none # This workflow is allowed to examine and comment on any issues
 
 timeout-minutes: 10
-engine: claude
+engine:
+  id: claude
+  model: small
 
 source: githubnext/agentics/workflows/issue-triage.md@1c6668b751c51af8571f01204ceffb19362e0f66
 ---
