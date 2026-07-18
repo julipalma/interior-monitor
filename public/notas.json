@@ -1,5 +1,12 @@
 [
   {
+    "url": "https://www.elterritorio.com.ar/noticias/2026/07/18/900409-adolescente-fue-demorado-y-acusado-de-apunalar-a-joven",
+    "titulo_original": "Adolescente fue demorado y acusado de apuñalar a joven",
+    "fuente": "El Territorio",
+    "fecha_publicacion": "2026-07-18T03:30:32",
+    "relevancia": 0.24
+  },
+  {
     "url": "https://www.lmneuquen.com/policiales/asi-quedo-registrado-el-autor-del-robo-millonario-un-restaurante-mientras-afuera-festejaban-un-triunfo-la-scaloneta-n1246419",
     "titulo_original": "Así quedó registrado el autor del robo millonario en un restaurante mientras afuera festejaban un triunfo de la Scaloneta",
     "fuente": "LM Neuquén",
@@ -3770,12 +3777,5 @@
     "fuente": "El Territorio",
     "fecha_publicacion": "2026-07-11T07:00:34",
     "relevancia": 0.28
-  },
-  {
-    "url": "https://www.elterritorio.com.ar/noticias/2026/07/11/898747-habria-estafado-con-falsas-ofertas-laborales-y-fue-detenida-en-posadas",
-    "titulo_original": "Habría estafado con falsas ofertas laborales y fue detenida en Posadas",
-    "fuente": "El Territorio",
-    "fecha_publicacion": "2026-07-11T05:00:34",
-    "relevancia": 0.3
   }
 ]
